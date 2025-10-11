@@ -1,108 +1,110 @@
+import React, { useEffect, useState } from "react";
 import {
-  Dialog, DialogTitle, DialogContent, DialogActions, TextField, Button, MenuItem, IconButton
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  Button,
+  Divider,
+  Box,
 } from "@mui/material";
-import { Save, SwapHoriz } from "@mui/icons-material";
+import MultiFieldEditor from "./MultiFieldEditor";
 
-const AddDialog = ({
-  dialogOpen, setDialogOpen, form, setForm, handleAdd, fromLang, setFromLang, toLang, setToLang, editIndex, setEditIndex
-}) => {
-  const languages = [
-    { code: "en", label: "English" },
-    { code: "de", label: "German" },
-    // { code: "es", label: "Spanish" },
-    // { code: "fr", label: "French" },
-    // Add more as needed
-  ];
+const deepClone = (obj) => JSON.parse(JSON.stringify(obj));
 
-  return (<Dialog open={dialogOpen} onClose={() => setDialogOpen(false)} fullWidth>
-    <DialogTitle>{editIndex !== null ? "Edit Word" : "Add Word"}</DialogTitle>
+const EditDialog = ({ open, onClose, onSave, editForm, setEditForm }) => {
+  const [tempForm, setTempForm] = useState({ en: [], de: [] });
 
-    <DialogContent className="flex flex-col gap-4 mt-4 pt-4" sx={{
-    pt: '32px !important', // Force override
-    px: 4, // Optional: add horizontal padding too
-  }}>
-      {/* Language selection with swap button */}
-      <div className="flex items-center gap-2">
-        <TextField
-          select
-          label="From"
-          value={fromLang}
-          onChange={(e) => {
-            const newFrom = e.target.value;
-            if (newFrom === toLang) {
-              setFromLang(toLang);
-              setToLang(fromLang);
-              setForm({ ...form, [newFrom]: form[toLang], [toLang]: form[newFrom] });
-            } else {
-              setFromLang(newFrom);
-            }
+  // On open, make a fresh copy of editForm for temporary edits
+  useEffect(() => {
+    if (open) {
+      setTempForm(deepClone(editForm));
+    }
+  }, [open, editForm]);
+
+  const handleWordsChange = (lang, val) => {
+    setTempForm((prev) => ({ ...prev, [lang]: val }));
+  };
+
+  const handleCancel = () => {
+    // Discard temporary edits and close dialog
+    setTempForm(deepClone(editForm));
+    onClose();
+  };
+
+  const handleFinalSave = async () => {
+    const cleaned = {
+      en: tempForm.en
+        .map((w) => ({
+          ...w,
+          word: w.word.trim(),
+          comment: w.comment?.trim() || "",
+        }))
+        .filter((w) => w.word),
+      de: tempForm.de
+        .map((w) => ({
+          ...w,
+          word: w.word.trim(),
+          comment: w.comment?.trim() || "",
+        }))
+        .filter((w) => w.word),
+    };
+
+    // Commit cleaned data to parent
+    setEditForm(cleaned);
+
+    // Perform API call
+    await onSave(cleaned);
+
+    onClose();
+  };
+
+  return (
+    <Dialog open={open} onClose={handleCancel} fullWidth maxWidth="lg">
+      <DialogTitle>Edit Entry</DialogTitle>
+
+      <DialogContent sx={{ pt: 3 }}>
+        <Box
+          sx={{
+            display: "flex",
+            width: "100%",
+            gap: 2,
+            alignItems: "stretch",
           }}
-          className="flex-1"
         >
-          {languages.map((lang) => (
-            <MenuItem key={lang.code} value={lang.code}>
-              {lang.label}
-            </MenuItem>
-          ))}
-        </TextField>
+          {/* English editor */}
+          <Box sx={{ flex: 1 }}>
+            <MultiFieldEditor
+              label="English"
+              words={tempForm.en}
+              onChange={(val) => handleWordsChange("en", val)}
+              scrollToBottom={open}
+            />
+          </Box>
 
-        <IconButton onClick={() => {
-          const temp = fromLang;
-          setFromLang(toLang);
-          setToLang(temp);
-          setForm({ en: form.de, de: form.en }); // swap values too
-        }}>
-          <SwapHoriz />
-        </IconButton>
+          {/* Divider */}
+          <Divider orientation="vertical" flexItem />
 
-        <TextField
-          select
-          label="To"
-          value={toLang}
-          onChange={(e) => {
-            const newTo = e.target.value;
-            if (newTo === fromLang) {
-              setToLang(fromLang);
-              setFromLang(toLang);
-              setForm({ ...form, [newTo]: form[fromLang], [fromLang]: form[newTo] });
-            } else {
-              setToLang(newTo);
-            }
-          }}
-          className="flex-1"
-        >
-          {languages.map((lang) => (
-            <MenuItem key={lang.code} value={lang.code}>
-              {lang.label}
-            </MenuItem>
-          ))}
-        </TextField>
-      </div>
+          {/* German editor */}
+          <Box sx={{ flex: 1 }}>
+            <MultiFieldEditor
+              label="German"
+              words={tempForm.de}
+              onChange={(val) => handleWordsChange("de", val)}
+              scrollToBottom={open}
+            />
+          </Box>
+        </Box>
+      </DialogContent>
 
-      {/* Input fields for the words */}
-      <div className="flex gap-4">
-        <TextField
-          label={languages.find(l => l.code === fromLang)?.label || "From"}
-          fullWidth
-          value={form[fromLang]}
-          onChange={(e) => setForm({ ...form, [fromLang]: e.target.value })}
-        />
-        <TextField
-          label={languages.find(l => l.code === toLang)?.label || "To"}
-          fullWidth
-          value={form[toLang]}
-          onChange={(e) => setForm({ ...form, [toLang]: e.target.value })}
-        />
-      </div>
-    </DialogContent>
+      <DialogActions>
+        <Button onClick={handleCancel}>Cancel</Button>
+        <Button variant="contained" onClick={handleFinalSave}>
+          Save
+        </Button>
+      </DialogActions>
+    </Dialog>
+  );
+};
 
-    <DialogActions>
-      <Button onClick={() => setDialogOpen(false)}>Cancel</Button>
-      <Button variant="contained" startIcon={<Save />} onClick={handleAdd}>
-        Save
-      </Button>
-    </DialogActions>
-  </Dialog>)
-}
-
-export default AddDialog;
+export default EditDialog;

@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from "react";
-import PropTypes from "prop-types";
+import React, { useState, useEffect, useMemo } from "react";
 import {
   Box,
   Paper,
@@ -16,14 +15,6 @@ import {
   Typography,
   Tooltip,
   TablePagination,
-  FormControlLabel,
-  Switch,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogActions,
-  TextField,
-  Button,
 } from "@mui/material";
 
 import DeleteIcon from "@mui/icons-material/Delete";
@@ -31,31 +22,28 @@ import EditIcon from "@mui/icons-material/Edit";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import { visuallyHidden } from "@mui/utils";
 import { alpha } from "@mui/material/styles";
+import ConfirmSaveDialog from "./ConfirmDialog";
+import EditDialog from "./EditDialog";
 
-
-const getHeadCells = (columnOrder) => {
-  if (columnOrder === "en-de") {
-    return [
+const getHeadCells = (columnOrder) =>
+  columnOrder === "en-de"
+    ? [
       { id: "enWords", label: "English" },
       { id: "deWords", label: "German" },
       { id: "edit", label: "Edit" },
       { id: "delete", label: "Delete" },
-    ];
-  } else {
-    return [
+    ]
+    : [
       { id: "deWords", label: "German" },
       { id: "enWords", label: "English" },
       { id: "edit", label: "Edit" },
       { id: "delete", label: "Delete" },
     ];
-  }
-};
- 
 
-// Sort helpers
 function descendingComparator(a, b, orderBy) {
   return b[orderBy].localeCompare(a[orderBy]);
 }
+
 function getComparator(order, orderBy) {
   return order === "desc"
     ? (a, b) => descendingComparator(a, b, orderBy)
@@ -64,9 +52,8 @@ function getComparator(order, orderBy) {
 
 // Table header
 function EnhancedTableHead({ order, orderBy, onRequestSort, columnOrder }) {
-  const createSortHandler = (property) => (event) => {
-    onRequestSort(event, property);
-  };
+  const createSortHandler = (property) => (event) => onRequestSort(event, property);
+
   return (
     <TableHead>
       <TableRow>
@@ -74,7 +61,10 @@ function EnhancedTableHead({ order, orderBy, onRequestSort, columnOrder }) {
           <Checkbox disabled />
         </TableCell>
         {getHeadCells(columnOrder).map((headCell) => (
-          <TableCell key={headCell.id} sortDirection={orderBy === headCell.id ? order : false}>
+          <TableCell
+            key={headCell.id}
+            sortDirection={orderBy === headCell.id ? order : false}
+          >
             <TableSortLabel
               active={orderBy === headCell.id}
               direction={orderBy === headCell.id ? order : "asc"}
@@ -102,13 +92,14 @@ function EnhancedTableToolbar({ numSelected, onDeleteSelected }) {
         pl: { sm: 2 },
         pr: { xs: 1, sm: 1 },
         ...(numSelected > 0 && {
-          bgcolor: (theme) => alpha(theme.palette.primary.main, theme.palette.action.activatedOpacity),
+          bgcolor: (theme) =>
+            alpha(theme.palette.primary.main, theme.palette.action.activatedOpacity),
         }),
       }}
     >
       {numSelected > 0 ? (
         <Typography sx={{ flex: "1 1 100%" }} color="inherit" variant="subtitle1">
-          {numSelected} selected
+          {numSelected} Row/s selected
         </Typography>
       ) : (
         <Typography sx={{ flex: "1 1 100%" }} variant="h6">
@@ -116,8 +107,8 @@ function EnhancedTableToolbar({ numSelected, onDeleteSelected }) {
         </Typography>
       )}
 
-      {numSelected > 0 ? (
-        <Tooltip title="Delete Selected">
+      {numSelected > 1 ? (
+        <Tooltip title={`Delete ${numSelected} selectedRows rows`}>
           <IconButton onClick={onDeleteSelected}>
             <DeleteIcon />
           </IconButton>
@@ -133,202 +124,281 @@ function EnhancedTableToolbar({ numSelected, onDeleteSelected }) {
   );
 }
 
-// Main table component
-export default function GlossaryTable({ data, setData, search, searchLang, columnOrder }) {
-  const [selected, setSelected] = React.useState([]);
-  const [order, setOrder] = React.useState("asc");
-  const [orderBy, setOrderBy] = React.useState("enWords");
-  const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
-  const [dense, setDense] = React.useState(false);
+// Main component
+export default function GlossaryTable({ data, setData, search, searchLang, columnOrder, handleDeleteRow, handleDeleteSelected, handleFinalEdit }) {
+  const [selectedRows, setSelectedRows] = useState([]);
+  const [order, setOrder] = useState("asc");
+  const [orderBy, setOrderBy] = useState("enWords");
+  const [page, setPage] = useState(0);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
+  const [dense, setDense] = useState(true);
 
-  // Edit dialog state
-  const [editIndex, setEditIndex] = React.useState(null);
-  const [editForm, setEditForm] = React.useState({ en: "", de: "" });
+  const [editIndex, setEditIndex] = useState(null);
+  const [editForm, setEditForm] = useState({});
   const [filteredData, setFilteredData] = useState(data);
 
-  useEffect(() => {
-    const lowered = search.toLowerCase();
+  const [openConfirmDialog, setOpenConfirmDialog] = useState(false);
+  const [openEditDialog, setOpenEditDialog] = useState(false);
+  const [rowToDelete, setRowToDelete] = useState(null);
+  const [openDeleteDialog, setOpenDeleteDialog] = useState(false);
+  const [deleteMode, setDeleteMode] = useState(null); // "single" or "bulk"
 
-    const filtered = data.filter((entry) => {
-      if (!search) return true;
+  // Filter data based on search
+  // useEffect(() => {
+  //   const lowered = search.toLowerCase();
+  //   const filtered = data.filter((entry) => {
+  //     if (!search) return true;
+  //     if (searchLang === "all") {
+  //       return ["en", "de"].some((lang) =>
+  //         entry[lang]?.some(({ word }) => word.toLowerCase().includes(lowered))
+  //       );
+  //     }
+  //     return entry[searchLang]?.some(({ word }) => word.toLowerCase().includes(lowered));
+  //   });
+  //   setFilteredData(filtered);
+  // }, [data, search, searchLang]);
 
-      if (searchLang === "all") {
-        return ["en", "de"].some((lang) =>
-          entry[lang]?.some(({ word }) => word.toLowerCase().includes(lowered))
-        );
-      }
-
-      return entry[searchLang]?.some(({ word }) =>
-        word.toLowerCase().includes(lowered)
-      );
-    });
-
-    setFilteredData(filtered);
-  }, [data, search, searchLang]);
-
-  const dataRows = React.useMemo(() => {
-    return filteredData.map((entry, idx) => ({
-      id: idx + 1,
-      enWords: entry.en.map((e) => e.word).join(", "),
-      deWords: entry.de.map((d) => d.word).join(", "),
-    }));
-  }, [filteredData]);
+  const dataRows = useMemo(
+    () =>
+      data.map((entry) => ({
+        id: entry.id,
+        enWords: entry.en.map((e) => e.word).join(", "),
+        deWords: entry.de.map((d) => d.word).join(", "),
+        en: entry.en,
+        de: entry.de, 
+      })),
+    [data]
+  );
 
   const handleRequestSort = (_, property) => {
     const isAsc = orderBy === property && order === "asc";
     setOrder(isAsc ? "desc" : "asc");
     setOrderBy(property);
   };
-
-  const handleClick = (event, id) => {
-    const selectedIndex = selected.indexOf(id);
-    const newSelected =
-      selectedIndex === -1
-        ? [...selected, id]
-        : selected.filter((selId) => selId !== id);
-    setSelected(newSelected);
+  const handleClick = (id) => {
+    setSelectedRows((prevSelected) =>
+      prevSelected.includes(id)
+        ? prevSelected.filter((selId) => selId !== id)
+        : [...prevSelected, id]
+    );
   };
 
-  const isSelected = (id) => selected.includes(id);
+  const isSelected = (id) => selectedRows.includes(id);
 
-  const handleDeleteRow = (id) => {
-    setData((prev) => prev.filter((_, i) => i !== id - 1));
-    setSelected((prev) => prev.filter((selId) => selId !== id));
-  };
+  // DELETE single row by ID
+  // const handleDeleteRow = async (id) => {
+  //   try {
+  //     const response = await fetch(`http://localhost:3001/api/glossary/${id}`, {
+  //       method: "DELETE",
+  //     });
+  //     if (!response.ok) throw new Error("Failed to delete item");
 
-  const handleDeleteSelected = () => {
-    setData((prev) => prev.filter((_, i) => !selected.includes(i + 1)));
-    setSelected([]);
-  };
+  //     setData((prev) => prev.filter((item) => item.id !== id));
+  //     setSelectedRows((prev) => prev.filter((selId) => selId !== id));
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // };
 
-  const handleEditRow = (id) => {
-    const index = id - 1;
-    const row = data[index];
-    setEditIndex(index);
+  // DELETE selectedRows rows by ID
+  // const handleDeleteSelected = async () => {
+  //   try {
+  //     await Promise.all(
+  //       selectedRows.map((id) =>
+  //         fetch(`http://localhost:3001/api/glossary/${id}`, { method: "DELETE" })
+  //       )
+  //     );
+  //     setData((prev) => prev.filter((item) => !selectedRows.includes(item.id)));
+  //     setSelectedRows([]);
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // };
+
+  // Edit row
+  const handleEditRow = (row) => {
+    setEditIndex(row.id);
     setEditForm({
-      en: row.en.map((e) => e.word).join(", "),
-      de: row.de.map((d) => d.word).join(", "),
+      ...row
     });
+    setOpenEditDialog(true);
   };
 
-  const handleSaveEdit = () => {
-    const updated = [...data];
-    updated[editIndex] = {
-      en: editForm.en.split(",").map((word) => ({ word: word.trim() })),
-      de: editForm.de.split(",").map((word) => ({ word: word.trim() })),
+
+  function toWordArray(input) {
+    if (!input) return []; // handle null/undefined
+    return input
+      .split(",")              // split by comma
+      .map(word => word.trim()) // trim whitespace
+      .filter(word => word.length > 0) // remove empty strings
+      .map(word => ({ word, comment: null })); // wrap in object
+  }
+  // Save edited row
+  const handleSaveEdit = async () => {
+
+    const updatedItem = {
+      en: editForm.en,
+      de: editForm.de,
     };
-    setData(updated);
-    setEditIndex(null);
+    console.log(updatedItem)
+    handleFinalEdit(updatedItem, editIndex);
+    setOpenConfirmDialog(false);
   };
 
-  const visibleRows = React.useMemo(() => {
-    return [...dataRows]
-      .sort(getComparator(order, orderBy))
-      .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
-  }, [dataRows, order, orderBy, page, rowsPerPage]);
+  const visibleRows = useMemo(
+    () =>
+      [...dataRows]
+        .sort(getComparator(order, orderBy))
+        .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage),
+    [dataRows, order, orderBy, page, rowsPerPage]
+  );
 
   return (
     <Box sx={{ width: "100%" }}>
       <Paper sx={{ width: "100%", mb: 2 }}>
         <EnhancedTableToolbar
-          numSelected={selected.length}
-          onDeleteSelected={handleDeleteSelected}
+          numSelected={selectedRows.length}
+          onDeleteSelected={() => {
+            setDeleteMode("bulk");
+            setOpenDeleteDialog(true);
+          }}
         />
-        <TableContainer style={{ maxHeight: 600 }}>
-          <Table stickyHeader size={dense ? "small" : "medium"}>
+        <TableContainer>
+          <Table size={dense ? "small" : "medium"}>
             <EnhancedTableHead
               order={order}
               orderBy={orderBy}
               onRequestSort={handleRequestSort}
-              columnOrder = {columnOrder}
+              columnOrder={columnOrder}
             />
             <TableBody>
-              {visibleRows.map((row, index) => {
+              {visibleRows.map((row) => {
                 const isItemSelected = isSelected(row.id);
-                const labelId = `enhanced-table-checkbox-${index}`;
                 return (
-                  <TableRow
-                    hover
-                    onClick={(event) => handleClick(event, row.id)}
-                    role="checkbox"
-                    aria-checked={isItemSelected}
-                    tabIndex={-1}
-                    key={row.id}
-                    selected={isItemSelected}
-                  >
+                  <TableRow hover key={row.id} role="checkbox" selected={isItemSelected}>
                     <TableCell padding="checkbox">
                       <Checkbox
-                        color="primary"
                         checked={isItemSelected}
-                        inputProps={{ "aria-labelledby": labelId }}
+                        onChange={() => handleClick(row.id)}
                       />
                     </TableCell>
-                    <TableCell>{row.enWords}</TableCell>
-                    <TableCell>{row.deWords}</TableCell>
-                    <TableCell>
-                      <IconButton onClick={() => handleEditRow(row.id)}>
-                        <EditIcon />
-                      </IconButton>
-                    </TableCell>
-                    <TableCell>
-                      <IconButton onClick={() => handleDeleteRow(row.id)}>
-                        <DeleteIcon />
-                      </IconButton>
-                    </TableCell>
+
+                    {/* dynamically render cells based on columnOrder */}
+                    {getHeadCells(columnOrder).map((headCell) => {
+                      if (headCell.id === "edit") {
+                        return (
+                          <TableCell key="edit">
+                            <IconButton onClick={() => handleEditRow(row)}>
+                              <EditIcon />
+                            </IconButton>
+                          </TableCell>
+                        );
+                      }
+
+                      if (headCell.id === "delete") {
+                        return (
+                          <TableCell key="delete">
+                            <IconButton
+                              onClick={() => {
+                                setRowToDelete(row.id);
+                                setDeleteMode("single");
+                                setOpenDeleteDialog(true);
+                              }}
+                            >
+                              <DeleteIcon />
+                            </IconButton>
+                          </TableCell>
+                        );
+                      }
+
+                      // render enWords or deWords dynamically
+                      return <TableCell key={headCell.id}>{row[headCell.id]}</TableCell>;
+                    })}
                   </TableRow>
                 );
               })}
             </TableBody>
           </Table>
         </TableContainer>
+
         <TablePagination
           rowsPerPageOptions={[5, 10, 25]}
           component="div"
           count={dataRows.length}
           rowsPerPage={rowsPerPage}
           page={page}
-          onPageChange={(e, newPage) => setPage(newPage)}
-          onRowsPerPageChange={(e) => {
-            setRowsPerPage(parseInt(e.target.value, 10));
+          onPageChange={(_, newPage) => setPage(newPage)}
+          onRowsPerPageChange={(event) => {
+            setRowsPerPage(parseInt(event.target.value, 10));
             setPage(0);
           }}
         />
       </Paper>
-      <FormControlLabel
-        control={<Switch checked={dense} onChange={(e) => setDense(e.target.checked)} />}
-        label="Dense padding"
-      />
 
-      {/* Modal Edit Dialog */}
-      <Dialog open={editIndex !== null} onClose={() => setEditIndex(null)} fullWidth>
-        <DialogTitle>Edit Entry</DialogTitle>
-        <DialogContent className="flex flex-col gap-4" sx={{ pt: 4 }}>
+      {/* Edit Dialog */}
+      {/* <Dialog open={openEditDialog} onClose={() => setOpenEditDialog(false)}>
+        <DialogTitle>Edit Row</DialogTitle>
+        <DialogContent>
           <TextField
+            margin="dense"
             label="English"
-            value={editForm.en}
-            onChange={(e) => setEditForm({ ...editForm, en: e.target.value })}
             fullWidth
+            value={editForm.en}
+            onChange={(e) => setEditForm((prev) => ({ ...prev, en: e.target.value }))}
           />
           <TextField
+            margin="dense"
             label="German"
-            value={editForm.de}
-            onChange={(e) => setEditForm({ ...editForm, de: e.target.value })}
             fullWidth
+            value={editForm.de}
+            onChange={(e) => setEditForm((prev) => ({ ...prev, de: e.target.value }))}
           />
         </DialogContent>
         <DialogActions>
-          <Button onClick={() => setEditIndex(null)}>Cancel</Button>
-          <Button variant="contained" onClick={handleSaveEdit}>
+          <Button onClick={() => setOpenEditDialog(false)}>Cancel</Button>
+          <Button
+            onClick={() => {
+              setOpenEditDialog(false);
+              setOpenConfirmDialog(true);
+            }}
+          >
             Save
           </Button>
         </DialogActions>
-      </Dialog>
+      </Dialog> */}
+
+      <EditDialog
+        open={openEditDialog}
+        onClose={() => setOpenEditDialog(false)}
+        onSave={() => {
+          setOpenEditDialog(false);
+          setOpenConfirmDialog(true);
+        }}
+        editForm={editForm}
+        setEditForm={setEditForm}
+      />
+      {/* Confirm Save Dialog */}
+      <ConfirmSaveDialog
+        open={openConfirmDialog}
+        onClose={() => setOpenConfirmDialog(false)}
+        onConfirm={handleSaveEdit}
+      />
+
+      {/* Confirm Delete Dialog */}
+      <ConfirmSaveDialog
+        open={openDeleteDialog}
+        primaryBtnText="Delete"
+        onClose={() => setOpenDeleteDialog(false)}
+        onConfirm={() => {
+          if (deleteMode === "single") handleDeleteRow(rowToDelete);
+          else if (deleteMode === "bulk") handleDeleteSelected(selectedRows);
+          setSelectedRows([]);
+          setOpenDeleteDialog(false);
+        }}
+        title="Confirm Delete"
+        message={`Are you sure you want to delete ${deleteMode === "single" ? "this row" : `${selectedRows.length} rows`
+          }?`}
+      />
     </Box>
   );
 }
-
-GlossaryTable.propTypes = {
-  data: PropTypes.array.isRequired,
-  setData: PropTypes.func.isRequired,
-};

@@ -3,13 +3,13 @@
     "en": [
       {
         "word": "(federal) state",
-        "comment": "some comment has been made."
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "(Bundes)-Land",
-        "comment": "some comment has been made."
+        "comment": null
       }
     ]
   },
@@ -17,21 +17,21 @@
     "en": [
       {
         "word": "seconded civil servant",
-        "comment": "some comment has been made."
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "abgeordneter Beamter",
-        "comment": "some comment has been made."
+        "comment": null
       },
       {
         "word": "abgeordnete Beamtin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "abgeordnete*r Beamt*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -39,13 +39,13 @@
     "en": [
       {
         "word": "(final) thesis",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Abschlussarbeit",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -63,7 +63,7 @@
     "de": [
       {
         "word": "Abschlusszeugnis",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -71,13 +71,13 @@
     "en": [
       {
         "word": "academic teaching",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "akademische Lehre",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -85,21 +85,21 @@
     "en": [
       {
         "word": "former rector",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Altrektor",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Altrektor",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Altrektor*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -107,13 +107,13 @@
     "en": [
       {
         "word": "classical languages",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Altsprachen",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -121,37 +121,37 @@
     "en": [
       {
         "word": "alumnus",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "alumna",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "alum",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "alumni",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Alumnus",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Alumna",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Alum",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Alumni",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -159,13 +159,13 @@
     "en": [
       {
         "word": "official secrecy",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Amtsverschwiegenheit",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -173,13 +173,13 @@
     "en": [
       {
         "word": "change of gender designation",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Änderung des Geschlechts",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -187,13 +187,13 @@
     "en": [
       {
         "word": "change of name",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Änderung des Namens",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -201,13 +201,13 @@
     "en": [
       {
         "word": "change of voting rights",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Änderung des Wahlrechts",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -215,13 +215,13 @@
     "en": [
       {
         "word": "offers for new employees",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Angebote für neue Mitarbeitende",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -229,7 +229,7 @@
     "en": [
       {
         "word": "University member",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "member of the University",
@@ -239,15 +239,15 @@
     "de": [
       {
         "word": "Angehöriger",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Angehörige",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Angehörige*r der Universität",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -255,7 +255,7 @@
     "en": [
       {
         "word": "adequacy decision",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -269,13 +269,13 @@
     "en": [
       {
         "word": "English Studies",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Anglistik",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -283,13 +283,13 @@
     "en": [
       {
         "word": "point of contact",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Anlaufstelle",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -297,13 +297,13 @@
     "en": [
       {
         "word": "directions and campus map",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Anreise/Lageplan",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -321,7 +321,7 @@
     "de": [
       {
         "word": "Anschubfinanzierung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -333,7 +333,7 @@
       },
       {
         "word": "contact",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "person/office to contact",
@@ -343,15 +343,15 @@
     "de": [
       {
         "word": "Ansprechpartner",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Ansprechpartnerin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Ansprechpartner*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -359,21 +359,21 @@
     "en": [
       {
         "word": "point of contact in the ZIM",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Ansprechpartner",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Ansprechpartnerin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Ansprechpartner*in im ZIM",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -381,13 +381,13 @@
     "en": [
       {
         "word": "equivalence agreement",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Äquivalenzvereinbarung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -395,13 +395,13 @@
     "en": [
       {
         "word": "workspace",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Arbeitsraum",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -415,7 +415,7 @@
     "de": [
       {
         "word": "AStA Stadtcampus",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -423,13 +423,13 @@
     "en": [
       {
         "word": "audit family-friendly university",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "audit familiengerechte hochschule",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -437,13 +437,13 @@
     "en": [
       {
         "word": "contract/contractual research",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Auftragsforschung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -451,7 +451,7 @@
     "en": [
       {
         "word": "data processing agreement (DPA)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -465,13 +465,13 @@
     "en": [
       {
         "word": "spin-off",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Ausgründung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -479,13 +479,13 @@
     "en": [
       {
         "word": "state-recognised international higher education institution",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "ausländische staatliche Hochschule",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -493,13 +493,13 @@
     "en": [
       {
         "word": "International Student Union (ASV)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Ausländische Studierenden-Vertretung (ASV)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -507,7 +507,7 @@
     "en": [
       {
         "word": "call for proposals",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "call for applications",
@@ -525,7 +525,7 @@
     "en": [
       {
         "word": "selection procedure",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -553,13 +553,13 @@
     "en": [
       {
         "word": "bachelor's thesis",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Bachelorarbeit",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -567,21 +567,21 @@
     "en": [
       {
         "word": "civil servant",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Beamter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Beamtin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Beamt*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -589,21 +589,21 @@
     "en": [
       {
         "word": "Research Data Management (RDM) Officer",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Beauftragter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Beauftragte",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Beauftragte*r für Forschungsdatenmanagement (FDM)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -611,13 +611,13 @@
     "en": [
       {
         "word": "accompanying research",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Begleitforschung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -625,13 +625,13 @@
     "en": [
       {
         "word": "professionally and vocationally qualified individuals",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "beruflich Qualifizierte",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -639,13 +639,13 @@
     "en": [
       {
         "word": "professional and vocational qualification",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Berufliche Qualifikation",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -653,13 +653,13 @@
     "en": [
       {
         "word": "professional fieldwork placement",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Berufsfeldpraktikum",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -681,13 +681,13 @@
     "en": [
       {
         "word": "professionally relevant",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "berufsrelevant",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -695,13 +695,13 @@
     "en": [
       {
         "word": "Professorial Appointment Committee",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Berufungskommission",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -709,13 +709,13 @@
     "en": [
       {
         "word": "appointment procedure",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Berufungsverfahren",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -723,13 +723,13 @@
     "en": [
       {
         "word": "procurement",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Beschaffung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -741,21 +741,21 @@
       },
       {
         "word": "staff (member)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Beschäftigter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Beschäftigte",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Beschäftigte*r",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -763,7 +763,7 @@
     "en": [
       {
         "word": "confirmation",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "certificate",
@@ -773,7 +773,7 @@
     "de": [
       {
         "word": "Bescheinigung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -781,13 +781,13 @@
     "en": [
       {
         "word": "constitute a quorum",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "beschlussfähig sein",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -795,21 +795,21 @@
     "en": [
       {
         "word": "doctoral supervisor",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Betreuer",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Betreuerin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Betreuer*in der Promotion",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -817,13 +817,13 @@
     "en": [
       {
         "word": "supervision agreement",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Betreuungsvereinbarung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -831,21 +831,21 @@
     "en": [
       {
         "word": "applicant",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Bewerber",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Bewerberin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Bewerber*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -853,13 +853,13 @@
     "en": [
       {
         "word": "application",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Bewerbung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -867,13 +867,13 @@
     "en": [
       {
         "word": "application deadline",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Bewerbungsfrist",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -881,13 +881,13 @@
     "en": [
       {
         "word": "library",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Bibliothek",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -895,13 +895,13 @@
     "en": [
       {
         "word": "library card",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Bibliotheksausweis",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -909,13 +909,13 @@
     "en": [
       {
         "word": "educational institution",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Bildungseinrichtung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -923,13 +923,13 @@
     "en": [
       {
         "word": "educational research",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Bildungsforschung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -937,13 +937,13 @@
     "en": [
       {
         "word": "educational institution",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Bildungsinstitution",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -951,13 +951,13 @@
     "en": [
       {
         "word": "education system",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Bildungssystem",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -965,13 +965,13 @@
     "en": [
       {
         "word": "improvement of the allocation grade",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Bonierung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -979,21 +979,21 @@
     "en": [
       {
         "word": "accountant",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Buchhalter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Buchhalterin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Buchhalter*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1001,13 +1001,13 @@
     "en": [
       {
         "word": "Federal Ministry of Education and Research (BMBF)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Bundesministerium für Bildung und Forschung (BMBF)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1015,13 +1015,13 @@
     "en": [
       {
         "word": "data protection",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Datenschutz",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1035,15 +1035,15 @@
     "de": [
       {
         "word": "Datenschutzbeauftragter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Datenschutzbeauftragte",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Datenschutzbeauftragte*r",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1051,13 +1051,13 @@
     "en": [
       {
         "word": "data protection law",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Datenschutzrecht",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1071,15 +1071,15 @@
     "de": [
       {
         "word": "Dekan",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Dekanin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Dekan*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1093,7 +1093,7 @@
     "de": [
       {
         "word": "Dekanat",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1101,13 +1101,13 @@
     "en": [
       {
         "word": "Department of Chemistry",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Department Chemie",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1115,13 +1115,13 @@
     "en": [
       {
         "word": "Department of Physics",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Department Physik",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1129,13 +1129,13 @@
     "en": [
       {
         "word": "Department of Exercise and Health",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Department Sport & Gesundheit",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1143,13 +1143,13 @@
     "en": [
       {
         "word": "German Research Foundation (DFG)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Deutsche Forschungsgemeinschaft (DFG)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1157,13 +1157,13 @@
     "en": [
       {
         "word": "German Academic Exchange Service (DAAD)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Deutscher Akademische Austauschdienst (DAAD)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1177,7 +1177,7 @@
     "de": [
       {
         "word": "Deutsches Studierendenwerk (DSW)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1185,13 +1185,13 @@
     "en": [
       {
         "word": "DFG Research Unit",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "DFG-Forschungsgruppe",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1199,13 +1199,13 @@
     "en": [
       {
         "word": "DFG Priority Programme",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "DFG-Schwerpunktprogramm",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1213,13 +1213,13 @@
     "en": [
       {
         "word": "business trip",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Dienstreise",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1231,13 +1231,13 @@
       },
       {
         "word": "field",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Disziplin",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1249,13 +1249,13 @@
       },
       {
         "word": "cross-disciplinary",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "disziplinübergreifend",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1263,21 +1263,21 @@
     "en": [
       {
         "word": "doctoral candidate",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Doktorand",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Doktorandin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Doktorand*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1285,21 +1285,21 @@
     "en": [
       {
         "word": "(university) lecturer",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Dozent",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Dozentin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Dozent*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1307,13 +1307,13 @@
     "en": [
       {
         "word": "Dr.",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Dr.",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1321,23 +1321,23 @@
     "en": [
       {
         "word": "alumnus",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "alumna",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "alumni",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "former students",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "former professors",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "former staff members",
@@ -1347,15 +1347,15 @@
     "de": [
       {
         "word": "Ehemaliger",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Ehemalige",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Ehemalige*r",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1363,11 +1363,11 @@
     "en": [
       {
         "word": "admissions examination",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "aptitude test",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "admissions examination",
@@ -1377,7 +1377,7 @@
     "de": [
       {
         "word": "Eignungsprüfung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1385,13 +1385,13 @@
     "en": [
       {
         "word": "enrolment deadline",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Einschreibefrist",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1399,13 +1399,13 @@
     "en": [
       {
         "word": "placement certificate",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Einstufungsbescheinigung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1413,7 +1413,7 @@
     "en": [
       {
         "word": "declaration of consent to the transfer of data",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -1433,7 +1433,7 @@
     "de": [
       {
         "word": "Einwilligungserklärung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1441,13 +1441,13 @@
     "en": [
       {
         "word": "Electrical Engineering",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Elektrotechnik",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1455,7 +1455,7 @@
     "en": [
       {
         "word": "Emmy Noether Independent Junior Research Groups",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -1469,13 +1469,13 @@
     "en": [
       {
         "word": "Emmy Noether Independent Junior Research Group Leader",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Emmy Noether Nachwuchsgruppenleitung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1483,13 +1483,13 @@
     "en": [
       {
         "word": "English Linguistics",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Englische Sprachwissenschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1497,13 +1497,13 @@
     "en": [
       {
         "word": "ERC (European Research Council) grant",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "ERC (European Research Council) Grant",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1511,13 +1511,13 @@
     "en": [
       {
         "word": "regular students",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Ersthörerschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1525,13 +1525,13 @@
     "en": [
       {
         "word": "complimentary degree programme",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Erweiterungsstudium",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1539,25 +1539,25 @@
     "en": [
       {
         "word": "parent or guardian",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "legal guardian",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Erziehungsberechtigter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Erziehungsberechtigte",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Erziehungsberechtigte*r",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1565,13 +1565,13 @@
     "en": [
       {
         "word": "Education Studies",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Erziehungswissenschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1579,13 +1579,13 @@
     "en": [
       {
         "word": "Ethics Committee",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Ethik-Kommission",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1593,13 +1593,13 @@
     "en": [
       {
         "word": "EU collaborative project",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "EU-Verbundprojekt",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1607,13 +1607,13 @@
     "en": [
       {
         "word": "evaluation report",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Evaluationsbericht",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1621,13 +1621,13 @@
     "en": [
       {
         "word": "Protestant Religious Education",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Evangelische Religionslehre",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1635,7 +1635,7 @@
     "en": [
       {
         "word": "(business) start-ups",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "starting a business",
@@ -1645,7 +1645,7 @@
     "de": [
       {
         "word": "Existenzgründung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1653,13 +1653,13 @@
     "en": [
       {
         "word": "de-registration",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Exmatrikulation",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1667,13 +1667,13 @@
     "en": [
       {
         "word": "confirmation of de-registration",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Exmatrikulationsbescheinigung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1681,13 +1681,13 @@
     "en": [
       {
         "word": "de-register",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "exmatrikulieren",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1695,13 +1695,13 @@
     "en": [
       {
         "word": "Excellence Strategy",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Exzellenzwettbewerb",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1713,7 +1713,7 @@
       },
       {
         "word": "discipline",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "field",
@@ -1723,7 +1723,7 @@
     "de": [
       {
         "word": "Fach",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1731,17 +1731,17 @@
     "en": [
       {
         "word": "subject combinations",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "combination of subjects/disciplines",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Fächerkombinationen",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1753,13 +1753,13 @@
       },
       {
         "word": "multidisciplinary",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "fächerübergreifend",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1773,7 +1773,7 @@
     "de": [
       {
         "word": "fachgebundene Hochschulreife (fgHR)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1781,13 +1781,13 @@
     "en": [
       {
         "word": "entrance qualification for a university of applied sciences",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Fachhochschulreife",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1795,13 +1795,13 @@
     "en": [
       {
         "word": "review board election",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Fachkollegienwahl",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1809,13 +1809,13 @@
     "en": [
       {
         "word": "review board",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Fachkollegium",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Fachkollegien",
@@ -1833,7 +1833,7 @@
     "de": [
       {
         "word": "Fachsemester",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1841,13 +1841,13 @@
     "en": [
       {
         "word": "faculty",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Fakultät",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1855,21 +1855,21 @@
     "en": [
       {
         "word": "Faculty of Computer Science",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Electrical Engineering and Mathematics",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Fakultät für Elektrotechnik",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Informatik und Mathematik",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1877,13 +1877,13 @@
     "en": [
       {
         "word": "Faculty of Arts and Humanities",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Fakultät für Kulturwissenschaften",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1891,13 +1891,13 @@
     "en": [
       {
         "word": "Faculty of Mechanical Engineering",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Fakultät für Maschinenbau",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1905,13 +1905,13 @@
     "en": [
       {
         "word": "Faculty of Science",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Fakultät für Naturwissenschaften",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1919,13 +1919,13 @@
     "en": [
       {
         "word": "Faculty of Business Administration and Economics",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Fakultät für Wirtschaftswissenschaften",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1933,11 +1933,11 @@
     "en": [
       {
         "word": "cross-faculty",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "across several faculties",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "interdisciplinary",
@@ -1947,7 +1947,7 @@
     "de": [
       {
         "word": "fakultätsübergreifend",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1955,13 +1955,13 @@
     "en": [
       {
         "word": "family-friendly university",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Familiengerechte Hochschule",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1979,7 +1979,7 @@
     "de": [
       {
         "word": "Förderer",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -1987,11 +1987,11 @@
     "en": [
       {
         "word": "sponsoring",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "funding",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "promotion ;",
@@ -2009,11 +2009,11 @@
     "en": [
       {
         "word": "sponsor",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "fund",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "support",
@@ -2021,11 +2021,11 @@
       },
       {
         "word": "promote",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "foster",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "encourage",
@@ -2049,7 +2049,7 @@
     "de": [
       {
         "word": "Förderprogramm",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2057,7 +2057,7 @@
     "en": [
       {
         "word": "form",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "document",
@@ -2067,7 +2067,7 @@
     "de": [
       {
         "word": "Formular",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2075,17 +2075,17 @@
     "en": [
       {
         "word": "form (sheet)",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "document (by subject)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Formular (thematisch)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2097,7 +2097,7 @@
       },
       {
         "word": "academic",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "scientist",
@@ -2107,15 +2107,15 @@
     "de": [
       {
         "word": "Forscher",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Forscherin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Forscher*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2123,13 +2123,13 @@
     "en": [
       {
         "word": "research",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Forschung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2137,13 +2137,13 @@
     "en": [
       {
         "word": "research and innovation transfer",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Forschungs- und Innovationstransfer",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2151,13 +2151,13 @@
     "en": [
       {
         "word": "research activity",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Forschungsaktivität",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2165,13 +2165,13 @@
     "en": [
       {
         "word": "research visit",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Forschungsaufenthalt",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2179,13 +2179,13 @@
     "en": [
       {
         "word": "research data",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Forschungsdaten",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2193,13 +2193,13 @@
     "en": [
       {
         "word": "research data management (RDM)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Forschungsdatenmanagement (FDM)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2207,13 +2207,13 @@
     "en": [
       {
         "word": "research organisation",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Forschungseinrichtung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2231,7 +2231,7 @@
     "de": [
       {
         "word": "Forschungsförderung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2239,13 +2239,13 @@
     "en": [
       {
         "word": "research infrastructure",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Forschungsinfrastruktur",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2253,17 +2253,17 @@
     "en": [
       {
         "word": "research-intensive",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "to have a strong focus on research",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "forschungsintensiv",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2271,13 +2271,13 @@
     "en": [
       {
         "word": "research culture",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Forschungskultur",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2285,21 +2285,21 @@
     "en": [
       {
         "word": "research award winner",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Forschungspreisträger",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Forschungspreisträgerin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Forschungspreisträger*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2307,13 +2307,13 @@
     "en": [
       {
         "word": "research seminar",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Forschungsseminar",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2321,13 +2321,13 @@
     "en": [
       {
         "word": "research service and consulting",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Forschungsservice und -beratung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2335,13 +2335,13 @@
     "en": [
       {
         "word": "research collaboration",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Forschungsverbund",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2349,7 +2349,7 @@
     "en": [
       {
         "word": "research project",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "research proposal",
@@ -2359,7 +2359,7 @@
     "de": [
       {
         "word": "Forschungsvorhaben",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2367,11 +2367,11 @@
     "en": [
       {
         "word": "deadline",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "due date",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "",
@@ -2381,7 +2381,7 @@
     "de": [
       {
         "word": "Frist",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2389,13 +2389,13 @@
     "en": [
       {
         "word": "guest auditors",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Gasthörerschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2403,21 +2403,21 @@
     "en": [
       {
         "word": "visiting professor",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Gastprofessor",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Gastprofessorin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Gastprofessor*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2425,39 +2425,39 @@
     "en": [
       {
         "word": "according to",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "pursuant to",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) set out in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) set forth in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) laid out in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) laid down in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) specified in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) defined in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) determined in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) stipulated in",
@@ -2467,7 +2467,7 @@
     "de": [
       {
         "word": "gemäß",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2475,13 +2475,13 @@
     "en": [
       {
         "word": "joint network \"Campus OWL\"",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "gemeinsamer Verein \"Campus OWL\"",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2489,13 +2489,13 @@
     "en": [
       {
         "word": "gender",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Gender",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2503,13 +2503,13 @@
     "en": [
       {
         "word": "German Literature",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Germanistische Literaturwissenschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2517,13 +2517,13 @@
     "en": [
       {
         "word": "German Linguistics",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Germanistische Sprachwissenschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2531,13 +2531,13 @@
     "en": [
       {
         "word": "The Society of Didactics of Mathematics (GDM)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Gesellschaft für Didaktik der Mathematik (GDM)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2545,13 +2545,13 @@
     "en": [
       {
         "word": "committee",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Gremium",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2559,13 +2559,13 @@
     "en": [
       {
         "word": "full cross-registration",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "große Zweithörerschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2573,7 +2573,7 @@
     "en": [
       {
         "word": "start-ups and entrepreneurship",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -2587,25 +2587,25 @@
     "en": [
       {
         "word": "founding chairperson",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Gründungsvorsitzender",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Gründungsvorsitzende",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Gründungsvorsitzende*r",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Gründungsvorsitz",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2613,13 +2613,13 @@
     "en": [
       {
         "word": "good research practice",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "gute wissenschaftliche Praxis",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2627,25 +2627,25 @@
     "en": [
       {
         "word": "habilitation candidate",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "postdoctoral candidate",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Habilitand",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Habilitandin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Habilitand*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2653,13 +2653,13 @@
     "en": [
       {
         "word": "habilitation",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Habilitation",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2667,13 +2667,13 @@
     "en": [
       {
         "word": "permanent (staff/employee)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "hauptamtlich(e) (Mitarbeitende)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2681,13 +2681,13 @@
     "en": [
       {
         "word": "(Paderborn University) Copy and Print Service",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Hausdruckerei",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2695,13 +2695,13 @@
     "en": [
       {
         "word": "budgetary matters",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Haushaltsfragen",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2709,13 +2709,13 @@
     "en": [
       {
         "word": "corporate font",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Hausschrift",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2723,13 +2723,13 @@
     "en": [
       {
         "word": "Home Economics",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Hauswirtschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2737,13 +2737,13 @@
     "en": [
       {
         "word": "Heinz Nixdorf Institute (HNI)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Heinz Nixdorf Institut (HNI)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2751,13 +2751,13 @@
     "en": [
       {
         "word": "High-Performance Computing (HPC)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "High Performance Computing (HPC)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2765,13 +2765,13 @@
     "en": [
       {
         "word": "information on student financing measures",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Hinweis zur Studienfinanzierung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2779,13 +2779,13 @@
     "en": [
       {
         "word": "COLOURS Alliance",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Hochschulallianz COLOURS",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2799,7 +2799,7 @@
     "de": [
       {
         "word": "Hochschulgesetz (HG)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2807,7 +2807,7 @@
     "en": [
       {
         "word": "university collaboration",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "cooperation between higher education institutions",
@@ -2817,7 +2817,7 @@
     "de": [
       {
         "word": "Hochschulkooperation",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2825,21 +2825,21 @@
     "en": [
       {
         "word": "junior professor and professors",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Hochschullehrer",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Hochschullehrerin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Hochschullehrer*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2847,7 +2847,7 @@
     "en": [
       {
         "word": "Executive Board",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -2861,13 +2861,13 @@
     "en": [
       {
         "word": "German Rectors' Conference (HRK)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Hochschulrektorenkonferenz (HRK)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2875,7 +2875,7 @@
     "en": [
       {
         "word": "university semester",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "total number of semesters enrolled at university",
@@ -2885,7 +2885,7 @@
     "de": [
       {
         "word": "Hochschulsemester",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2893,13 +2893,13 @@
     "en": [
       {
         "word": "University Sports",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Hochschulsport",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2907,13 +2907,13 @@
     "en": [
       {
         "word": "higher education system",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Hochschulsystem",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2921,13 +2921,13 @@
     "en": [
       {
         "word": "high level of research activity",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "hohe Forschungsaktivität",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2935,13 +2935,13 @@
     "en": [
       {
         "word": "Humboldt Research Fellowship",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Humboldt-Forschungsstipendium",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2949,21 +2949,21 @@
     "en": [
       {
         "word": "Humboldt Research Fellow",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Humboldt-Stipendiat",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Humboldt-Stipendiatin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Humboldt-Stipendiat*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -2971,7 +2971,7 @@
     "en": [
       {
         "word": "identity management (IdM)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -2985,7 +2985,7 @@
     "en": [
       {
         "word": "on behalf of",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -2999,13 +2999,13 @@
     "en": [
       {
         "word": "enrolment",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Immatrikulation",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3013,13 +3013,13 @@
     "en": [
       {
         "word": "certificate of enrolment",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Immatrikulationsbescheinigung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3027,13 +3027,13 @@
     "en": [
       {
         "word": "Chamber of Commerce and Industry (CCI oder IHK)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Industrie- und Handelskammer (IHK)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3041,13 +3041,13 @@
     "en": [
       {
         "word": "Computer Science",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Informatik",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3055,13 +3055,13 @@
     "en": [
       {
         "word": "information and offers for employees",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Informationen und Angebote für Beschäftigte",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3069,7 +3069,7 @@
     "en": [
       {
         "word": "information notice",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "information letter",
@@ -3079,7 +3079,7 @@
     "de": [
       {
         "word": "Informationsschreiben",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3087,13 +3087,13 @@
     "en": [
       {
         "word": "informed consent",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "informierte Einwilligung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3101,13 +3101,13 @@
     "en": [
       {
         "word": "inclusion",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Inklusion",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3115,13 +3115,13 @@
     "en": [
       {
         "word": "finance software (MACH)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Integrierte Verbundrechnung (MACH)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3129,13 +3129,13 @@
     "en": [
       {
         "word": "Intelligent technical systems",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Intelligente Technische Systeme",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3143,11 +3143,11 @@
     "en": [
       {
         "word": "interdisciplinary",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "cross-disciplinary",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "multi-disciplinary",
@@ -3157,7 +3157,7 @@
     "de": [
       {
         "word": "interdisziplinär",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3165,13 +3165,13 @@
     "en": [
       {
         "word": "interdisciplinary research institute",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "interdisziplinäre Forschungseinrichtung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3179,13 +3179,13 @@
     "en": [
       {
         "word": "interdisciplinary research project",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "interdisziplinäres Forschungsprojekt",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3193,7 +3193,7 @@
     "en": [
       {
         "word": "internationality",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "international orientation/outlook",
@@ -3203,7 +3203,7 @@
     "de": [
       {
         "word": "Internationalität",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3211,13 +3211,13 @@
     "en": [
       {
         "word": "Jenny Aloni Centre for Early-Career Researchers",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Jenny Aloni Centre for Early-Career Researchers",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3225,13 +3225,13 @@
     "en": [
       {
         "word": "Jenny Aloni Archive",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Jenny-Aloni-Archiv",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3239,13 +3239,13 @@
     "en": [
       {
         "word": "youth and trainee representatives (JAV)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Jugend- und Auszubildendenvertretung (JAV)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3253,21 +3253,21 @@
     "en": [
       {
         "word": "junior professor",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Juniorprofessor",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Juniorprofessorin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Juniorprofessor*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3275,13 +3275,13 @@
     "en": [
       {
         "word": "partial cross-registration",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "kleine Zweithörerschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3289,13 +3289,13 @@
     "en": [
       {
         "word": "Competence Centre for Sustainable Energy Technology (KET)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Kompetenzzentrum für Nachhaltige Energietechnik (KET)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3303,13 +3303,13 @@
     "en": [
       {
         "word": "Centre for Higher Mathematics Education (kdhm)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Kompetenzzentrum Hochschuldidaktik Mathematik (kdhm)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3317,13 +3317,13 @@
     "en": [
       {
         "word": "(Paderborn University) Writing Centre",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Kompetenzzentrum Schreiben",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3331,13 +3331,13 @@
     "en": [
       {
         "word": "contact (us)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Kontakt",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3345,21 +3345,21 @@
     "en": [
       {
         "word": "account holder",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Kontoinhaber",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Kontoinhaberin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Kontoinhaber*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3367,21 +3367,21 @@
     "en": [
       {
         "word": "coordinator",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Koordinator",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Koordinatorin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Koordinator*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3389,13 +3389,13 @@
     "en": [
       {
         "word": "expenses and funding",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Kosten und Finanzierung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3403,13 +3403,13 @@
     "en": [
       {
         "word": "The Standing Conference of the Ministers of Education and Cultural Affairs (KMK)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Kulturministerkonferenz (KMK)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3417,13 +3417,13 @@
     "en": [
       {
         "word": "Kunststofftechnik Paderborn (KTP)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Kunststofftechnik Paderborn (KTP)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3431,13 +3431,13 @@
     "en": [
       {
         "word": "course",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Kurs",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3445,29 +3445,29 @@
     "en": [
       {
         "word": "university profile",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "projects",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "subject areas",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Kurzporträt/Uni im Profil",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Projekte",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Fachgebiete",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3475,21 +3475,21 @@
     "en": [
       {
         "word": "laboratory engineer",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Laboringenieur",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Laboringenieurin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Laboringenieur*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3497,13 +3497,13 @@
     "en": [
       {
         "word": "State Rectors' Conference (LRK)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Landesrektorenkonferenz (LRK)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3511,39 +3511,39 @@
     "en": [
       {
         "word": "according to",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "pursuant to",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) set out in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) set forth in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) laid out in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) laid down in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) specified in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) defined in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) determined in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) stipulated in",
@@ -3561,13 +3561,13 @@
     "en": [
       {
         "word": "teaching and learning opportunities",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Lehr- und Lernangebote",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3575,7 +3575,7 @@
     "en": [
       {
         "word": "teaching profession",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "teacher education degree",
@@ -3585,7 +3585,7 @@
     "de": [
       {
         "word": "Lehramt",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3593,13 +3593,13 @@
     "en": [
       {
         "word": "field of teacher education",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Lehramtsbereich",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3607,13 +3607,13 @@
     "en": [
       {
         "word": "teacher education degree programme",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Lehramtsstudiengang",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3621,13 +3621,13 @@
     "en": [
       {
         "word": "teaching degree",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Lehramtsstudium",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3635,21 +3635,21 @@
     "en": [
       {
         "word": "teaching staff",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Lehrender",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Lehrende",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Lehrende*r",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3657,21 +3657,21 @@
     "en": [
       {
         "word": "teacher training",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Lehrerbildung",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Lehrerinnenbildung",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Lehrer*innenbildung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3679,11 +3679,11 @@
     "en": [
       {
         "word": "teacher",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "instructor",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "lecturer",
@@ -3693,7 +3693,7 @@
     "de": [
       {
         "word": "Lehrkraft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3701,13 +3701,13 @@
     "en": [
       {
         "word": "class",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Lehrveranstaltung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3715,13 +3715,13 @@
     "en": [
       {
         "word": "mission statement",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Leitbild",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3735,19 +3735,19 @@
     "de": [
       {
         "word": "Leiter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Leiterin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Leiter*in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Leitung (einer Stabstelle)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3755,13 +3755,13 @@
     "en": [
       {
         "word": "guiding principle",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Leitidee",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3769,7 +3769,7 @@
     "en": [
       {
         "word": "management",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "head",
@@ -3779,7 +3779,7 @@
     "de": [
       {
         "word": "Leitung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3787,13 +3787,13 @@
     "en": [
       {
         "word": "control room",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Leitwarte",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3801,13 +3801,13 @@
     "en": [
       {
         "word": "Linguistics",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Linguistik",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3815,7 +3815,7 @@
     "en": [
       {
         "word": "lottery procedure",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -3829,13 +3829,13 @@
     "en": [
       {
         "word": "Mechanical Engineering",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Maschinenbau",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3843,13 +3843,13 @@
     "en": [
       {
         "word": "(Faculty of) Mechanical Engineering",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Maschinenbau (Fakultät)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3857,13 +3857,13 @@
     "en": [
       {
         "word": "master's programme in Culture and Society",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Master Kultur und Gesellschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3871,13 +3871,13 @@
     "en": [
       {
         "word": "master's thesis",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Masterarbeit",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3885,13 +3885,13 @@
     "en": [
       {
         "word": "Materials Science",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Materialwissenschaften",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3899,13 +3899,13 @@
     "en": [
       {
         "word": "Mathematics",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Mathematik",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3913,13 +3913,13 @@
     "en": [
       {
         "word": "Mathematics and its Didactics",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Mathematik und ihre Didaktik",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3927,13 +3927,13 @@
     "en": [
       {
         "word": "student identification number",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Matrikelnummer",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3941,13 +3941,13 @@
     "en": [
       {
         "word": "Media Studies",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Medienwissenschaften",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3955,13 +3955,13 @@
     "en": [
       {
         "word": "accident and incident report notebook",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Meldeblock",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3969,13 +3969,13 @@
     "en": [
       {
         "word": "Mensa (cafeteria and dining hall)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Mensa",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3983,13 +3983,13 @@
     "en": [
       {
         "word": "Mensa Academica (cafeteria and dining hall)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Mensa Academica",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -3997,13 +3997,13 @@
     "en": [
       {
         "word": "Mensa Forum (cafeteria and dining hall)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Mensa Forum",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4011,13 +4011,13 @@
     "en": [
       {
         "word": "minimum required grade",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Mindestnote",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4025,29 +4025,29 @@
     "en": [
       {
         "word": "Ministry for Economic Affairs",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Innovation",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Digitalisation and Energy of the State of North Rhine-Westphalia",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Ministerium für Wirtschaft",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Innovation",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Digitalisierung und Energie des Landes Nordrhein-Westfalen",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4055,13 +4055,13 @@
     "en": [
       {
         "word": "with restricted admission",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "mit Zulassungsbeschränkung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4069,7 +4069,7 @@
     "en": [
       {
         "word": "technical and administrative staff (MTV)",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "employee in technology and administration",
@@ -4079,15 +4079,15 @@
     "de": [
       {
         "word": "Mitarbeiter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Mitarbeiterin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Mitarbeiter*in in Technik und Verwaltung (MTV)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4095,13 +4095,13 @@
     "en": [
       {
         "word": "member",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Mitglied",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4109,7 +4109,7 @@
     "en": [
       {
         "word": "mid-sized",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -4123,13 +4123,13 @@
     "en": [
       {
         "word": "mobility pattern",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Mobilitätsmuster",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4137,17 +4137,17 @@
     "en": [
       {
         "word": "Fashion",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Textiles and Design",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Mode-Textil-Design",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4155,7 +4155,7 @@
     "en": [
       {
         "word": "oral examination",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "oral defense",
@@ -4165,7 +4165,7 @@
     "de": [
       {
         "word": "mündliche Prüfung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4173,13 +4173,13 @@
     "en": [
       {
         "word": "Music",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Musik",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4187,13 +4187,13 @@
     "en": [
       {
         "word": "Musicology",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Musikwissenschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4201,13 +4201,13 @@
     "en": [
       {
         "word": "Musicology Seminar Detmold/Paderborn",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Musikwissenschaftliches Seminar Detmold/Paderborn",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4215,39 +4215,39 @@
     "en": [
       {
         "word": "according to",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "pursuant to",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) set out in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) set forth in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) laid out in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) laid down in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) specified in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) defined in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) determined in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "(as) stipulated in",
@@ -4265,13 +4265,13 @@
     "en": [
       {
         "word": "surname",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Nachname",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4279,13 +4279,13 @@
     "en": [
       {
         "word": "succession procedure",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Nachrückverfahren",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4303,7 +4303,7 @@
     "de": [
       {
         "word": "Nachruf",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4311,13 +4311,13 @@
     "en": [
       {
         "word": "National Competence Centre for High Performance Computing",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Nationales Hochleistungsrechenzentrum",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4325,13 +4325,13 @@
     "en": [
       {
         "word": "National High Performance Computing (NHR)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Nationales Hochleistungsrechnen (NHR)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4339,13 +4339,13 @@
     "en": [
       {
         "word": "natural person",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "natürliche Person",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4353,13 +4353,13 @@
     "en": [
       {
         "word": "Network for Interdisciplinary Research (NiFo)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Netzwerk interdisziplinäre Forschung (NiFo)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4367,13 +4367,13 @@
     "en": [
       {
         "word": "Modern Languages",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Neue Sprachen",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4381,13 +4381,13 @@
     "en": [
       {
         "word": "NHR Centre",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "NHR-Zentrum",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4395,13 +4395,13 @@
     "en": [
       {
         "word": "non-academic tariff staff",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "nichtwissenschaftliche Tarifbeschäftigte",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4409,11 +4409,11 @@
     "en": [
       {
         "word": "number",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "no.",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "point",
@@ -4423,7 +4423,7 @@
     "de": [
       {
         "word": "Nummer",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4431,7 +4431,7 @@
     "en": [
       {
         "word": "public service",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "civil service",
@@ -4441,7 +4441,7 @@
     "de": [
       {
         "word": "öffentlicher Dienst",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4449,13 +4449,13 @@
     "en": [
       {
         "word": "ombudsperson",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Ombudsperson",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4469,7 +4469,7 @@
     "de": [
       {
         "word": "Ombudsperson für die Wissenschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4477,13 +4477,13 @@
     "en": [
       {
         "word": "online voting system",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Onlinewahlsystem",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Online-Wahlsystem",
@@ -4495,13 +4495,13 @@
     "en": [
       {
         "word": "Optoelectronics and Photonics",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Optoelektronik und Photonik",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4509,13 +4509,13 @@
     "en": [
       {
         "word": "organisation",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Organisation",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4523,21 +4523,21 @@
     "en": [
       {
         "word": "educator",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Pädagoge",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Pädagogin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Pädagog*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4545,13 +4545,13 @@
     "en": [
       {
         "word": "Paderborn Center for Advanced Studies (PACE)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Paderborn Center for Advanced Studies (PACE)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4559,13 +4559,13 @@
     "en": [
       {
         "word": "Paderborn Center for Parallel Computing (PC²)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Paderborn Center for Parallel Computing (PC²)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4573,13 +4573,13 @@
     "en": [
       {
         "word": "Paderborn Institute for Data Science and Scientific Computing (DaSCO)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Paderborn Institute for Data Science and Scientific Computing (DaSCO)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4587,13 +4587,13 @@
     "en": [
       {
         "word": "Paderborn Institute for Additive Fabrication (PIAF)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Paderborner Institut für Additive Fertigung (PIAF)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4601,13 +4601,13 @@
     "en": [
       {
         "word": "Paderborner Wissenschaftskolleg",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Paderborner Wissenschaftskolleg",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4615,13 +4615,13 @@
     "en": [
       {
         "word": "section",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Paragraph/§",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4635,7 +4635,7 @@
     "de": [
       {
         "word": "Partnerhochschule",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4643,7 +4643,7 @@
     "en": [
       {
         "word": "buddy",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "mentor",
@@ -4653,15 +4653,15 @@
     "de": [
       {
         "word": "Pate",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Patin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Pat*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4669,13 +4669,13 @@
     "en": [
       {
         "word": "patent",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Patent",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4683,13 +4683,13 @@
     "en": [
       {
         "word": "patent marketing agency",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Patentverwertungsagentur",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4697,13 +4697,13 @@
     "en": [
       {
         "word": "staff",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Personal",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4711,13 +4711,13 @@
     "en": [
       {
         "word": "staff development",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Personalentwicklung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4725,13 +4725,13 @@
     "en": [
       {
         "word": "Staff Council",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Personalrat",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4739,13 +4739,13 @@
     "en": [
       {
         "word": "personal data",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "personenbezogene Daten",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4753,13 +4753,13 @@
     "en": [
       {
         "word": "personal info box",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Personenbox",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4767,13 +4767,13 @@
     "en": [
       {
         "word": "directory of all staff",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Personenverzeichnis",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4781,13 +4781,13 @@
     "en": [
       {
         "word": "Philosophy",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Philosophie",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4795,13 +4795,13 @@
     "en": [
       {
         "word": "Physics",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Physik",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4809,13 +4809,13 @@
     "en": [
       {
         "word": "Popular Music and Media",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Populäre Musik und Medien",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4823,13 +4823,13 @@
     "en": [
       {
         "word": "postdoc",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Postdoc",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4837,7 +4837,7 @@
     "en": [
       {
         "word": "internship",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "placement",
@@ -4847,7 +4847,7 @@
     "de": [
       {
         "word": "Praktikum",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4861,15 +4861,15 @@
     "de": [
       {
         "word": "Präsident",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Präsidentin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Präsident*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4877,13 +4877,13 @@
     "en": [
       {
         "word": "(University) Executive Board",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Präsidium",
-        "comment": "something"
+        "comment": null
       }
     ]
   },
@@ -4891,21 +4891,21 @@
     "en": [
       {
         "word": "cooperation partner",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Praxispartner",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Praxispartnerin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Praxispartner*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4913,7 +4913,7 @@
     "en": [
       {
         "word": "school internship semester",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -4927,11 +4927,11 @@
     "en": [
       {
         "word": "laureate",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "prize/award winner",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "honouree",
@@ -4941,15 +4941,15 @@
     "de": [
       {
         "word": "Preisträger",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Preisträgerin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Preisträger*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4957,13 +4957,13 @@
     "en": [
       {
         "word": "press",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Presse",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4971,13 +4971,13 @@
     "en": [
       {
         "word": "press release",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Presseinformation",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4985,13 +4985,13 @@
     "en": [
       {
         "word": "trial study programme",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Probestudium",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -4999,21 +4999,21 @@
     "en": [
       {
         "word": "professor",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Professor",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Professorin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Professor*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5021,13 +5021,13 @@
     "en": [
       {
         "word": "profile manager",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Profil-/Personenmanager",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5035,7 +5035,7 @@
     "en": [
       {
         "word": "key research area",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -5049,13 +5049,13 @@
     "en": [
       {
         "word": "profile page",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Profilseite",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5063,13 +5063,13 @@
     "en": [
       {
         "word": "project proposal",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Projektantrag",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5077,21 +5077,21 @@
     "en": [
       {
         "word": "project partner",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Projektpartner",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Projektpartnerin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Projektpartner*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5099,13 +5099,13 @@
     "en": [
       {
         "word": "project outline",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Projektskizze",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5117,13 +5117,13 @@
       },
       {
         "word": "doctorate",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Promotion",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5131,13 +5131,13 @@
     "en": [
       {
         "word": "application for a doctoral degree",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Promotionsantrag",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5145,13 +5145,13 @@
     "en": [
       {
         "word": "Doctoral Examinations Board",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Promotionsausschuss",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5159,13 +5159,13 @@
     "en": [
       {
         "word": "doctoral funding and support",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Promotionsförderung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5173,21 +5173,21 @@
     "en": [
       {
         "word": "prospective doctoral candidate",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Promotionsinteressierter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Promotionsinteressierte",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Promotionsinteressierte*r",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5195,13 +5195,13 @@
     "en": [
       {
         "word": "doctoral committee",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Promotionskommission",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5209,13 +5209,13 @@
     "en": [
       {
         "word": "doctoral degree requirement",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Promotionsleistung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5223,13 +5223,13 @@
     "en": [
       {
         "word": "doctoral degree regulations",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Promotionsordnung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5237,13 +5237,13 @@
     "en": [
       {
         "word": "doctoral examination procedure",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Promotionsverfahren",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5251,13 +5251,13 @@
     "en": [
       {
         "word": "prerequisites for doctoral studies",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Promotionsvoraussetzungen",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5265,13 +5265,13 @@
     "en": [
       {
         "word": "doctoral workshop",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Promovierenden-Workshop",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5279,13 +5279,13 @@
     "en": [
       {
         "word": "examination",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Prüfung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5293,13 +5293,13 @@
     "en": [
       {
         "word": "examination registration period",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Prüfungsanmeldephase",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5307,13 +5307,13 @@
     "en": [
       {
         "word": "Examinations Board",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Prüfungsausschuss",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5321,17 +5321,17 @@
     "en": [
       {
         "word": "Chair of the Examinations Board",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Prüfungsausschussvorsitzender",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Prüfungsausschussvorsitzende",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Prüfungsausschussvorsitz",
@@ -5347,13 +5347,13 @@
     "en": [
       {
         "word": "Examinations Colloquium",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Prüfungskolloquium",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5361,13 +5361,13 @@
     "en": [
       {
         "word": "examination period",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Prüfungszeitraum",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5375,13 +5375,13 @@
     "en": [
       {
         "word": "publication",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Publikation",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5389,13 +5389,13 @@
     "en": [
       {
         "word": "publication service",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Publikationsservice",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5403,13 +5403,13 @@
     "en": [
       {
         "word": "quantum research",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Quantenforschung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5417,7 +5417,7 @@
     "en": [
       {
         "word": "general regulations",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "regulatory framework",
@@ -5427,7 +5427,7 @@
     "de": [
       {
         "word": "Rahmenordnung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5435,13 +5435,13 @@
     "en": [
       {
         "word": "legal basis",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Rechtsgrundlage",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5449,13 +5449,13 @@
     "en": [
       {
         "word": "standard period of study",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Regelstudienzeit",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5463,13 +5463,13 @@
     "en": [
       {
         "word": "Travel Expenses Office",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Reisekostenstelle",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5481,7 +5481,7 @@
       },
       {
         "word": "recruitment",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -5495,13 +5495,13 @@
     "en": [
       {
         "word": "pension statement",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Rentenbescheinigung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5509,13 +5509,13 @@
     "en": [
       {
         "word": "re-registration",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Rückmeldung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5537,17 +5537,17 @@
     "en": [
       {
         "word": "Science",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Social and Technology Education at the Primary Level",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Sachunterrichtsdidaktik",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5555,17 +5555,17 @@
     "en": [
       {
         "word": "Science",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Social and Technology Education at the Primary Level",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Sachunterrichtsdidaktik",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5573,7 +5573,7 @@
     "en": [
       {
         "word": "sentence",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -5587,13 +5587,13 @@
     "en": [
       {
         "word": "school-leaving certificate",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Schulabschluss (-zeugnis)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5601,21 +5601,21 @@
     "en": [
       {
         "word": "secretary",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Sekretär",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Sekretärin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Sekretär*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5623,13 +5623,13 @@
     "en": [
       {
         "word": "Secretary's Office",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Sekretariat",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5643,7 +5643,7 @@
     "de": [
       {
         "word": "selbstständige Lehrtätigkeit",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5651,13 +5651,13 @@
     "en": [
       {
         "word": "self-governance",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Selbstverwaltung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5665,13 +5665,13 @@
     "en": [
       {
         "word": "self-governing research system",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Selbstverwaltung der Wissenschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5679,13 +5679,13 @@
     "en": [
       {
         "word": "semester fee",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Semesterbeitrag",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5703,7 +5703,7 @@
     "de": [
       {
         "word": "Semesterdauer",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5711,13 +5711,13 @@
     "en": [
       {
         "word": "semester ticket (student public transport ticket)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Semesterticket",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5725,13 +5725,13 @@
     "en": [
       {
         "word": "seminar",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Seminar",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5739,13 +5739,13 @@
     "en": [
       {
         "word": "Senate",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Senat",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5753,13 +5753,13 @@
     "en": [
       {
         "word": "Service Centre",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Service Center",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5767,13 +5767,13 @@
     "en": [
       {
         "word": "service and counselling",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Service und Beratung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5781,13 +5781,13 @@
     "en": [
       {
         "word": "meeting (of the doctoral examinations board)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Sitzung (des Promotionsausschusses)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5795,13 +5795,13 @@
     "en": [
       {
         "word": "Software Innovation Campus Paderborn (SICP)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Software Innovation Campus Paderborn (SCIP)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5809,13 +5809,13 @@
     "en": [
       {
         "word": "Software Innovation Lab (SI-Lab)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Software Innovation Lab (SI-Lab)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5823,13 +5823,13 @@
     "en": [
       {
         "word": "summer semester",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Sommersemester",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5837,13 +5837,13 @@
     "en": [
       {
         "word": "Collaborative Research Centre (CRC)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Sonderforschungsbereich (SFB)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5857,7 +5857,7 @@
     "de": [
       {
         "word": "Sozialgesetzbuch Fünftes Buch (SGB V)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5871,7 +5871,7 @@
     "de": [
       {
         "word": "Spitzenforschung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5879,13 +5879,13 @@
     "en": [
       {
         "word": "Exercise and Health",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Sport und Gesundheit",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5893,13 +5893,13 @@
     "en": [
       {
         "word": "Sports Economics",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Sportökonomie",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5907,21 +5907,21 @@
     "en": [
       {
         "word": "spokesperson",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Sprecher",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Sprecherin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Sprecher*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5929,13 +5929,13 @@
     "en": [
       {
         "word": "office hours",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Sprechzeiten",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5943,13 +5943,13 @@
     "en": [
       {
         "word": "office",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Stabsstelle",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5957,21 +5957,21 @@
     "en": [
       {
         "word": "Press",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Communications and Marketing Office",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Stabstelle Presse",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Kommunikation und Marketing",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -5979,7 +5979,7 @@
     "en": [
       {
         "word": "Master Data Management (MDM)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -5993,13 +5993,13 @@
     "en": [
       {
         "word": "standard application",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Standardantrag",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6007,7 +6007,7 @@
     "en": [
       {
         "word": "standard data protection clauses",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -6021,13 +6021,13 @@
     "en": [
       {
         "word": "standard questionnaire",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Standard-Fragebogen",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6035,13 +6035,13 @@
     "en": [
       {
         "word": "Start-up Campus OWL",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Start-up Campus OWL",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6049,13 +6049,13 @@
     "en": [
       {
         "word": "change of status from cross-registered student to regular student",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Statuswechsel von Zweithörer zum Ersthörer",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6063,7 +6063,7 @@
     "en": [
       {
         "word": "job offer",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "job vacancy",
@@ -6073,7 +6073,7 @@
     "de": [
       {
         "word": "Stellenangebot",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6081,13 +6081,13 @@
     "en": [
       {
         "word": "job advertisement",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Stellenausschreibung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6095,29 +6095,29 @@
     "en": [
       {
         "word": "deputy chairperson [groß",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "wenn als Titel einer Person verwendet]",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "stellv. Vorsitzender",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "stellv. Vorsitzende",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "stellv. Vorsitz",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "stellv. Vorsitzende*r",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6125,13 +6125,13 @@
     "en": [
       {
         "word": "tax matters",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Steuerangelegenheiten",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6139,13 +6139,13 @@
     "en": [
       {
         "word": "endowed professorship",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Stiftungsprofessur",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6153,15 +6153,15 @@
     "en": [
       {
         "word": "scholarship",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "grant",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "fellowship",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "bursary",
@@ -6171,7 +6171,7 @@
     "de": [
       {
         "word": "Stipendium",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6179,13 +6179,13 @@
     "en": [
       {
         "word": "structural issue",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Strukturfrage",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6193,13 +6193,13 @@
     "en": [
       {
         "word": "student assistant",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "studentische Hilfskraft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6207,13 +6207,13 @@
     "en": [
       {
         "word": "student media initiative",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "studentische Medieninitiative",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6221,13 +6221,13 @@
     "en": [
       {
         "word": "student self-administration",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "studentische Selbstverwaltung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6235,13 +6235,13 @@
     "en": [
       {
         "word": "courses on offer",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Studienangebot",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6249,7 +6249,7 @@
     "en": [
       {
         "word": "German courses",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -6263,13 +6263,13 @@
     "en": [
       {
         "word": "Academic Advisory Office",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Studienbüro",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6283,15 +6283,15 @@
     "de": [
       {
         "word": "Studiendekan",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Studiendekanin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Studiendekan*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6299,13 +6299,13 @@
     "en": [
       {
         "word": "study design",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Studiendesign",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6313,13 +6313,13 @@
     "en": [
       {
         "word": "study programme",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Studiengang",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6327,13 +6327,13 @@
     "en": [
       {
         "word": "study programme/subject (in combination)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Studiengang/Fach (in Kombination)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6341,21 +6341,21 @@
     "en": [
       {
         "word": "prospective student",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Studieninteressierter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Studieninteressierte",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Studieninteressierte*r",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6363,11 +6363,11 @@
     "en": [
       {
         "word": "academic work and achievements",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "coursework",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "",
@@ -6377,7 +6377,7 @@
     "de": [
       {
         "word": "Studienleistung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6385,13 +6385,13 @@
     "en": [
       {
         "word": "study population",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Studienpopulation",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6399,13 +6399,13 @@
     "en": [
       {
         "word": "DSH preparation courses",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Studienvorbereitende Deutschkurse (DSH)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6413,13 +6413,13 @@
     "en": [
       {
         "word": "studying as a school student",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Studieren vor dem Abi",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6427,13 +6427,13 @@
     "en": [
       {
         "word": "student exchange",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Studierendenaustausch",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6441,13 +6441,13 @@
     "en": [
       {
         "word": "student ID card",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Studierendenausweis",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6455,13 +6455,13 @@
     "en": [
       {
         "word": "Studierendenwerk (student services association)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Studierendenwerk",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6469,13 +6469,13 @@
     "en": [
       {
         "word": "(Paderborn University) Studio Theatre",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Studiobühne",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6483,13 +6483,13 @@
     "en": [
       {
         "word": "timetable",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Stundenplan",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6497,13 +6497,13 @@
     "en": [
       {
         "word": "PANDA system (Learning Management System (LMS))",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "System PANDA",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6511,25 +6511,25 @@
     "en": [
       {
         "word": "team leader",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Teamleiter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Teamleiterin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Teamleiter*in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Teamleitung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6537,21 +6537,21 @@
     "en": [
       {
         "word": "technical employee/staff (member)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "technischer Mitarbeiter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "technische Mitarbeiterin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "technische*r Mitarbeiter*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6559,13 +6559,13 @@
     "en": [
       {
         "word": "Technologiepark",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Technologiepark",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6573,13 +6573,13 @@
     "en": [
       {
         "word": "consent form for participation",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Teilnehmendenerklärung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6587,13 +6587,13 @@
     "en": [
       {
         "word": "telephone directory",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Telefonverzeichnis",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6601,13 +6601,13 @@
     "en": [
       {
         "word": "academic calendar",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Termine für das Semester",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6615,13 +6615,13 @@
     "en": [
       {
         "word": "(important) dates and registration",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Termine und Anmeldung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6629,13 +6629,13 @@
     "en": [
       {
         "word": "(important) dates and deadlines",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Termine und Fristen",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6643,13 +6643,13 @@
     "en": [
       {
         "word": "Theology",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Theologie",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6657,13 +6657,13 @@
     "en": [
       {
         "word": "transfer",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Transfer",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6671,13 +6671,13 @@
     "en": [
       {
         "word": "transfer network",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Transfernetzwerk",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6685,13 +6685,13 @@
     "en": [
       {
         "word": "transformation and education",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Transformation und Bildung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6699,13 +6699,13 @@
     "en": [
       {
         "word": "Transregional Collaborative Research Centre (Transregio)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "transregionaler Sonderforschungsbereich (Transregio)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6713,13 +6713,13 @@
     "en": [
       {
         "word": "Certificate of Non-Objection (Unbedenklichkeitsbescheinigung)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Unbedenklichkeitsbescheinigung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6727,13 +6727,13 @@
     "en": [
       {
         "word": "accident report",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Unfallanzeige",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6747,7 +6747,7 @@
     "de": [
       {
         "word": "Universität",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6755,13 +6755,13 @@
     "en": [
       {
         "word": "Paderborn University as an employer",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Universität als Arbeitgeberin",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6769,13 +6769,13 @@
     "en": [
       {
         "word": "University of Castilla-La Mancha (UCLM)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Universität Kastilien-La Mancha",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6783,13 +6783,13 @@
     "en": [
       {
         "word": "Le Mans University",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Universität Le Mans",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6797,13 +6797,13 @@
     "en": [
       {
         "word": "Paderborn University",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Universität Paderborn",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6811,13 +6811,13 @@
     "en": [
       {
         "word": "German University Alliance (UA) 11+",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Universitätsallianz (UA) 11+",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6825,7 +6825,7 @@
     "en": [
       {
         "word": "University member",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "member of the University",
@@ -6835,15 +6835,15 @@
     "de": [
       {
         "word": "Universitätsangehöriger",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Universitätsangehörige",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Universitätsangehörige*r",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6851,13 +6851,13 @@
     "en": [
       {
         "word": "(Paderborn) University Library",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Universitätsbibliothek (UB)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6865,13 +6865,13 @@
     "en": [
       {
         "word": "University Society",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Universitätsgesellschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6879,21 +6879,21 @@
     "en": [
       {
         "word": "University member",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "member of the University [als Ansprache zu nutzen",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "z.B. in Rundmails]",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Universitätsmitglied",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6911,7 +6911,7 @@
     "de": [
       {
         "word": "Veranstaltung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6919,17 +6919,17 @@
     "en": [
       {
         "word": "controller",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Verantwortlicher",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Verantwortliche",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Verantwortliche*r",
@@ -6941,17 +6941,17 @@
     "en": [
       {
         "word": "Association for Electrical",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Electronic & Information Technologies (VDE)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Verband der Elektrotechnik Informationstechnik (VDE)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6959,7 +6959,7 @@
     "en": [
       {
         "word": "New York liaison office",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -6973,13 +6973,13 @@
     "en": [
       {
         "word": "collaborative project",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Verbundprojekt",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -6987,13 +6987,13 @@
     "en": [
       {
         "word": "association for the promotion of mathematics and science education (MNU)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Verein zur Förderung des mathematisch-naturwissenschaftlichen Unterrichts (MNU)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7001,7 +7001,7 @@
     "en": [
       {
         "word": "Code of Conduct for the Recruitment of Researchers",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -7015,13 +7015,13 @@
     "en": [
       {
         "word": "connection and networking with business and industry",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Vernetzung mit der Wirtschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7029,7 +7029,7 @@
     "en": [
       {
         "word": "confidentiality",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -7043,25 +7043,25 @@
     "en": [
       {
         "word": "representative (on the Faculty Board)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Vertreter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Vertreterin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Vertreter*in",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Vertretung (im Fakultätsrat)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7069,13 +7069,13 @@
     "en": [
       {
         "word": "representative",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Vertretung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7083,21 +7083,21 @@
     "en": [
       {
         "word": "interim professor",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Vertretungsprofessor",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Vertretungsprofessorin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Vertretungsprofessor*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7105,13 +7105,13 @@
     "en": [
       {
         "word": "administration",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Verwaltung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7119,7 +7119,7 @@
     "en": [
       {
         "word": "records of processing activities (RoPA)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -7139,15 +7139,15 @@
     "de": [
       {
         "word": "Vizepräsident",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Vizepräsidentin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Vizepräsident*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7155,21 +7155,21 @@
     "en": [
       {
         "word": "Vice-President for International Relations",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Vizepräsident",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Vizepräsidentin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Vizepräsident*in für Internationale Beziehungen",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7177,21 +7177,21 @@
     "en": [
       {
         "word": "Vice-President for Finances and Human Resources",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Vizepräsident",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Vizepräsidentin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Vizepräsident*in für Wirtschafts- und Personalverwaltung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7199,13 +7199,13 @@
     "en": [
       {
         "word": "preparatory course",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Vorbereitungskurs",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7213,13 +7213,13 @@
     "en": [
       {
         "word": "lecture",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Vorlesung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7227,13 +7227,13 @@
     "en": [
       {
         "word": "course catalogue",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Vorlesungsverzeichnis",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7241,13 +7241,13 @@
     "en": [
       {
         "word": "first name",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Vorname",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7261,19 +7261,19 @@
     "de": [
       {
         "word": "Vorsitzender",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Vorsitzende",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Vorsitz",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Vorsitzende*r",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7281,13 +7281,13 @@
     "en": [
       {
         "word": "Board (of directors/executive board)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Vorstand",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7295,13 +7295,13 @@
     "en": [
       {
         "word": "Office (of xyz)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Vorzimmer (von XY)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7309,13 +7309,13 @@
     "en": [
       {
         "word": "election",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Wahl",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7323,7 +7323,7 @@
     "en": [
       {
         "word": "Electoral Office",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -7337,13 +7337,13 @@
     "en": [
       {
         "word": "voting period",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Wahlfrist",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7351,7 +7351,7 @@
     "en": [
       {
         "word": "Voting Centre",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -7365,7 +7365,7 @@
     "en": [
       {
         "word": "continuing/further education",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "professional development",
@@ -7375,7 +7375,7 @@
     "de": [
       {
         "word": "Weiterbildung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7383,21 +7383,21 @@
     "en": [
       {
         "word": "further staff",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "weiterer Beschäftigter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "weitere Beschäftigte",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "weitere*r Beschäftigte*r",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7405,13 +7405,13 @@
     "en": [
       {
         "word": "important grounds (to take a leave of absence)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Wichtige Gründe (Beurlaubung)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7419,13 +7419,13 @@
     "en": [
       {
         "word": "right of cancellation",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Widerrufsrecht",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7433,7 +7433,7 @@
     "en": [
       {
         "word": "right to object",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
@@ -7447,13 +7447,13 @@
     "en": [
       {
         "word": "winter semester",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Wintersemester",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7461,7 +7461,7 @@
     "en": [
       {
         "word": "business",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "economics",
@@ -7471,7 +7471,7 @@
     "de": [
       {
         "word": "Wirtschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7479,13 +7479,13 @@
     "en": [
       {
         "word": "Business Informatics",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Wirtschaftsinformatik",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7493,17 +7493,17 @@
     "en": [
       {
         "word": "Industrial Engineering",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "specialisation in Mechanical Engineering",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Wirtschaftsingenieurwesen Schwerpunkt Maschinenbau",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7517,7 +7517,7 @@
     "de": [
       {
         "word": "Wirtschaftsplan",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7525,13 +7525,13 @@
     "en": [
       {
         "word": "business hub",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Wirtschaftsstandort",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7539,13 +7539,13 @@
     "en": [
       {
         "word": "Business Administration and Economics",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Wirtschaftswissenschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7553,11 +7553,11 @@
     "en": [
       {
         "word": "academia",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "research",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "science",
@@ -7567,7 +7567,7 @@
     "de": [
       {
         "word": "Wissenschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7575,7 +7575,7 @@
     "en": [
       {
         "word": "researcher",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "scientist",
@@ -7585,15 +7585,15 @@
     "de": [
       {
         "word": "Wissenschaftler",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Wissenschaftlerin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Wissenschaftler*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7601,13 +7601,13 @@
     "en": [
       {
         "word": "Academic Staff Council",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Wissenschaftler-Personalrat",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7615,7 +7615,7 @@
     "en": [
       {
         "word": "academic",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "scientific",
@@ -7629,7 +7629,7 @@
     "de": [
       {
         "word": "wissenschaftlich",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7637,13 +7637,13 @@
     "en": [
       {
         "word": "research/graduate assistant with a bachelor's degree",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "wissenschaftliche Hilfskraft mit Bachelorabschluss (WHB)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7651,13 +7651,13 @@
     "en": [
       {
         "word": "academic career",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "wissenschaftliche Karriere",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7675,15 +7675,15 @@
     "de": [
       {
         "word": "wissenschaftlicher Mitarbeiter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "wissenschaftliche Mitarbeiterin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "wissenschaftliche*r Mitarbeiter*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7691,13 +7691,13 @@
     "en": [
       {
         "word": "early-career researchers",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "wissenschaftlicher Nachwuchs",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7705,21 +7705,21 @@
     "en": [
       {
         "word": "academic tariff staff or employees",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "wissenschaftlicher Tarifbeschäftigter",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "wissenschaftliche Tarifbeschäftigte",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "wissenschaftliche*r Tarifbeschäftigte*r",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7727,13 +7727,13 @@
     "en": [
       {
         "word": "academic and research landscape",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Wissenschafts- und Forschungslandschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7741,13 +7741,13 @@
     "en": [
       {
         "word": "science communication",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Wissenschaftskommunikation",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7755,13 +7755,13 @@
     "en": [
       {
         "word": "The German Science and Humanities Council",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Wissenschaftsrat",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7769,13 +7769,13 @@
     "en": [
       {
         "word": "knowledge transfer",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Wissenstransfer",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7783,13 +7783,13 @@
     "en": [
       {
         "word": "knowledge transfer",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Wissensvermittlung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7797,13 +7797,13 @@
     "en": [
       {
         "word": "The Central Office for Foreign Education (ZAB)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Zentralstelle für ausländisches Bildungswesen (ZAB)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7811,13 +7811,13 @@
     "en": [
       {
         "word": "Central Administration",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Zentralverwaltung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7825,13 +7825,13 @@
     "en": [
       {
         "word": "Centre for Educational Research and Teacher Education (PLAZ)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Zentrum für Bildungsforschung und Lehrerbildung (PLAZ)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7839,13 +7839,13 @@
     "en": [
       {
         "word": "Centre for Contemporary German Literature",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Zentrum für deutschsprachige Gegenwartsliteratur",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7853,13 +7853,13 @@
     "en": [
       {
         "word": "Centre for Information and Media Technology Services (ZIM)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Zentrum für Informations- und Medientechnische Dienste (ZIM)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7867,13 +7867,13 @@
     "en": [
       {
         "word": "Centre for Comparative Theology and Cultural Studies (ZeKK)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Zentrum für Komparative Theologie und Kulturwissenschaften",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7881,13 +7881,13 @@
     "en": [
       {
         "word": "Language Centre (ZfS)",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Zentrum für Sprachlehre (ZfS)",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7895,13 +7895,13 @@
     "en": [
       {
         "word": "target agreement",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Zielvereinbarung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7909,7 +7909,7 @@
     "en": [
       {
         "word": "access rights",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "right of access",
@@ -7919,7 +7919,7 @@
     "de": [
       {
         "word": "Zugriffsrecht",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7933,7 +7933,7 @@
     "de": [
       {
         "word": "Zukunftsmeile",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7941,13 +7941,13 @@
     "en": [
       {
         "word": "admission",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Zulassung",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7955,13 +7955,13 @@
     "en": [
       {
         "word": "admission-restricted",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "zulassungsbeschränkt",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7969,13 +7969,13 @@
     "en": [
       {
         "word": "open admission",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "zulassungsfrei",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -7983,21 +7983,21 @@
     "en": [
       {
         "word": "cross-registered student",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Zweithörer",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Zweithörerin",
-        "comment": ""
+        "comment": null
       },
       {
         "word": "Zweithörer*in",
-        "comment": ""
+        "comment": null
       }
     ]
   },
@@ -8005,13 +8005,13 @@
     "en": [
       {
         "word": "cross-registration",
-        "comment": ""
+        "comment": null
       }
     ],
     "de": [
       {
         "word": "Zweithörerschaft",
-        "comment": ""
+        "comment": null
       }
     ]
   }

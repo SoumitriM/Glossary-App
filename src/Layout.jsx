@@ -7,7 +7,7 @@ export default function Layout({ children }) {
 
     <div className="flex flex-col min-h-screen bg-white-200">
       <Navbar />
-      <main className="flex-grow pt-[8rem] pb-[12px] overflow-auto" >
+      <main className="flex-grow pt-[6rem] pb-[12px] overflow-auto" >
           {children}
         {/* <CustomToastContainer position="top-center" /> */}
       </main>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import {
   Box,
@@ -24,16 +24,17 @@ import {
   TextField,
   Button,
 } from "@mui/material";
-
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import FilterListIcon from "@mui/icons-material/FilterList";
-import { visuallyHidden } from "@mui/utils";
 import { alpha } from "@mui/material/styles";
-import InfiniteScroll from "react-infinite-scroll-component";
+import { visuallyHidden } from "@mui/utils";
+import { FixedSizeList as List } from "react-window";
+import ConfirmSaveDialog from "./ConfirmDialog";
 
-const getHeadCells = (columnOrder) => {
-  return columnOrder === "en-de"
+// -------- Helpers ----------
+const getHeadCells = (columnOrder) =>
+  columnOrder === "en-de"
     ? [
         { id: "enWords", label: "English" },
         { id: "deWords", label: "German" },
@@ -46,7 +47,6 @@ const getHeadCells = (columnOrder) => {
         { id: "edit", label: "Edit" },
         { id: "delete", label: "Delete" },
       ];
-};
 
 function descendingComparator(a, b, orderBy) {
   return b[orderBy].localeCompare(a[orderBy]);
@@ -57,6 +57,7 @@ function getComparator(order, orderBy) {
     : (a, b) => -descendingComparator(a, b, orderBy);
 }
 
+// --------- Table Head ---------
 function EnhancedTableHead({ order, orderBy, onRequestSort, columnOrder }) {
   const createSortHandler = (property) => (event) => {
     onRequestSort(event, property);
@@ -69,7 +70,10 @@ function EnhancedTableHead({ order, orderBy, onRequestSort, columnOrder }) {
           <Checkbox disabled />
         </TableCell>
         {getHeadCells(columnOrder).map((headCell) => (
-          <TableCell key={headCell.id} sortDirection={orderBy === headCell.id ? order : false}>
+          <TableCell
+            key={headCell.id}
+            sortDirection={orderBy === headCell.id ? order : false}
+          >
             <TableSortLabel
               active={orderBy === headCell.id}
               direction={orderBy === headCell.id ? order : "asc"}
@@ -89,6 +93,7 @@ function EnhancedTableHead({ order, orderBy, onRequestSort, columnOrder }) {
   );
 }
 
+// -------- Toolbar ------------
 function EnhancedTableToolbar({ numSelected, onDeleteSelected }) {
   return (
     <Toolbar
@@ -96,7 +101,8 @@ function EnhancedTableToolbar({ numSelected, onDeleteSelected }) {
         pl: { sm: 2 },
         pr: { xs: 1, sm: 1 },
         ...(numSelected > 0 && {
-          bgcolor: (theme) => alpha(theme.palette.primary.main, theme.palette.action.activatedOpacity),
+          bgcolor: (theme) =>
+            alpha(theme.palette.primary.main, theme.palette.action.activatedOpacity),
         }),
       }}
     >
@@ -127,77 +133,85 @@ function EnhancedTableToolbar({ numSelected, onDeleteSelected }) {
   );
 }
 
-export default function GlossaryTable({ data, setData, search, searchLang, columnOrder }) {
+// --------- Main Component ----------
+export default function GlossaryTable({
+  data,
+  setData,
+  search,
+  searchLang,
+  columnOrder,
+}) {
   const [selected, setSelected] = useState([]);
   const [order, setOrder] = useState("asc");
   const [orderBy, setOrderBy] = useState("enWords");
-  const [dense, setDense] = useState(false);
+  const [dense, setDense] = useState(true);
   const [editIndex, setEditIndex] = useState(null);
   const [editForm, setEditForm] = useState({ en: "", de: "" });
   const [filteredData, setFilteredData] = useState(data);
+  const [openConfirmDialog, setOpenConfirmDialog] = useState(false);
 
-  const chunkSize = 20;
-  const [displayedRows, setDisplayedRows] = useState([]);
-  const [hasMore, setHasMore] = useState(true);
-
+  // ------- Filtering ----------
   useEffect(() => {
     const lowered = search.toLowerCase();
     const filtered = data.filter((entry) => {
       if (!search) return true;
       if (searchLang === "all") {
         return ["en", "de"].some((lang) =>
-          entry[lang]?.some(({ word }) => word.toLowerCase().includes(lowered))
+          entry[lang]?.some(({ word }) =>
+            word.toLowerCase().includes(lowered)
+          )
         );
       }
-      return entry[searchLang]?.some(({ word }) => word.toLowerCase().includes(lowered));
+      return entry[searchLang]?.some(({ word }) =>
+        word.toLowerCase().includes(lowered)
+      );
     });
     setFilteredData(filtered);
   }, [data, search, searchLang]);
 
-  const dataRows = React.useMemo(() => {
-    return filteredData.map((entry, idx) => ({
-      id: idx + 1,
-      enWords: entry.en.map((e) => e.word).join(", "),
-      deWords: entry.de.map((d) => d.word).join(", "),
-    }));
-  }, [filteredData]);
+  // ------- Prepare rows ----------
+  const dataRows = useMemo(
+    () =>
+      filteredData.map((entry, idx) => ({
+        id: idx + 1,
+        enWords: entry.en.map((e) => e.word).join(", "),
+        deWords: entry.de.map((d) => d.word).join(", "),
+      })),
+    [filteredData]
+  );
 
-  useEffect(() => {
-    setDisplayedRows(dataRows.slice(0, chunkSize));
-    setHasMore(dataRows.length > chunkSize);
-  }, [dataRows]);
-
-  const fetchMoreData = () => {
-    const next = displayedRows.length + chunkSize;
-    const newRows = dataRows.slice(0, next);
-    setDisplayedRows(newRows);
-    setHasMore(newRows.length < dataRows.length);
-  };
-
+  // ------- Sorting ----------
   const handleRequestSort = (_, property) => {
     const isAsc = orderBy === property && order === "asc";
     setOrder(isAsc ? "desc" : "asc");
     setOrderBy(property);
   };
 
+  const sortedRows = useMemo(() => {
+    return [...dataRows].sort(getComparator(order, orderBy));
+  }, [dataRows, order, orderBy]);
+
+  // ------- Selection ----------
   const handleClick = (event, id) => {
     const selectedIndex = selected.indexOf(id);
-    const newSelected = selectedIndex === -1 ? [...selected, id] : selected.filter((selId) => selId !== id);
+    const newSelected =
+      selectedIndex === -1
+        ? [...selected, id]
+        : selected.filter((selId) => selId !== id);
     setSelected(newSelected);
   };
-
   const isSelected = (id) => selected.includes(id);
 
   const handleDeleteRow = (id) => {
     setData((prev) => prev.filter((_, i) => i !== id - 1));
     setSelected((prev) => prev.filter((selId) => selId !== id));
   };
-
   const handleDeleteSelected = () => {
     setData((prev) => prev.filter((_, i) => !selected.includes(i + 1)));
     setSelected([]);
   };
 
+  // ------- Edit ----------
   const handleEditRow = (id) => {
     const index = id - 1;
     const row = data[index];
@@ -208,6 +222,8 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
     });
   };
 
+
+
   const handleSaveEdit = () => {
     const updated = [...data];
     updated[editIndex] = {
@@ -216,6 +232,47 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
     };
     setData(updated);
     setEditIndex(null);
+    setOpenConfirmDialog(false);
+  };
+
+  // ------- Virtualized Row Renderer ----------
+  const Row = ({ index, style }) => {
+    const row = sortedRows[index];
+    const isItemSelected = isSelected(row.id);
+    const labelId = `enhanced-table-checkbox-${index}`;
+
+    return (
+      <TableRow
+        hover
+        onClick={(event) => handleClick(event, row.id)}
+        role="checkbox"
+        aria-checked={isItemSelected}
+        tabIndex={-1}
+        key={row.id}
+        selected={isItemSelected}
+        style={style} // <-- important: react-window gives position
+      >
+        <TableCell padding="checkbox">
+          <Checkbox
+            color="primary"
+            checked={isItemSelected}
+            inputProps={{ "aria-labelledby": labelId }}
+          />
+        </TableCell>
+        <TableCell>{row.enWords}</TableCell>
+        <TableCell>{row.deWords}</TableCell>
+        <TableCell>
+          <IconButton onClick={() => handleEditRow(row.id)}>
+            <EditIcon />
+          </IconButton>
+        </TableCell>
+        <TableCell>
+          <IconButton onClick={() => handleDeleteRow(row.id)}>
+            <DeleteIcon />
+          </IconButton>
+        </TableCell>
+      </TableRow>
+    );
   };
 
   return (
@@ -225,7 +282,7 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
           numSelected={selected.length}
           onDeleteSelected={handleDeleteSelected}
         />
-        <TableContainer id="scrollable-table" style={{ maxHeight: 600 }}>
+        <TableContainer style={{ maxHeight: 600 }}>
           <Table stickyHeader size={dense ? "small" : "medium"}>
             <EnhancedTableHead
               order={order}
@@ -233,62 +290,31 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
               onRequestSort={handleRequestSort}
               columnOrder={columnOrder}
             />
+            {/* Virtualized body */}
             <TableBody>
-              <InfiniteScroll
-                dataLength={displayedRows.length}
-                next={fetchMoreData}
-                hasMore={hasMore}
-                scrollableTarget="scrollable-table"
-                loader={<TableRow><TableCell colSpan={5}>Loading...</TableCell></TableRow>}
+              <List
+                height={500}
+                itemCount={sortedRows.length}
+                itemSize={dense ? 40 : 52} // row height
+                width="100%"
               >
-                {displayedRows.map((row, index) => {
-                  const isItemSelected = isSelected(row.id);
-                  const labelId = `enhanced-table-checkbox-${index}`;
-                  return (
-                    <TableRow
-                      hover
-                      onClick={(event) => handleClick(event, row.id)}
-                      role="checkbox"
-                      aria-checked={isItemSelected}
-                      tabIndex={-1}
-                      key={row.id}
-                      selected={isItemSelected}
-                    >
-                      <TableCell padding="checkbox">
-                        <Checkbox
-                          color="primary"
-                          checked={isItemSelected}
-                          inputProps={{ "aria-labelledby": labelId }}
-                        />
-                      </TableCell>
-                      <TableCell>{row.enWords}</TableCell>
-                      <TableCell>{row.deWords}</TableCell>
-                      <TableCell>
-                        <IconButton onClick={() => handleEditRow(row.id)}>
-                          <EditIcon />
-                        </IconButton>
-                      </TableCell>
-                      <TableCell>
-                        <IconButton onClick={() => handleDeleteRow(row.id)}>
-                          <DeleteIcon />
-                        </IconButton>
-                      </TableCell>
-                    </TableRow>
-                  );
-                })}
-              </InfiniteScroll>
+                {Row}
+              </List>
             </TableBody>
           </Table>
         </TableContainer>
       </Paper>
+
       <FormControlLabel
-        control={<Switch checked={dense} onChange={(e) => setDense(e.target.checked)} />}
+        control={
+          <Switch checked={dense} onChange={(e) => setDense(e.target.checked)} />
+        }
         label="Dense padding"
       />
 
       <Dialog open={editIndex !== null} onClose={() => setEditIndex(null)} fullWidth>
         <DialogTitle>Edit Entry</DialogTitle>
-        <DialogContent className="flex flex-col gap-4" sx={{ pt: 4 }}>
+        <DialogContent sx={{ pt: 4 }}>
           <TextField
             label="English"
             value={editForm.en}
@@ -304,11 +330,19 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
         </DialogContent>
         <DialogActions>
           <Button onClick={() => setEditIndex(null)}>Cancel</Button>
-          <Button variant="contained" onClick={handleSaveEdit}>
+          <Button variant="contained" onClick={() => setOpenConfirmDialog(true)}>
             Save
           </Button>
         </DialogActions>
       </Dialog>
+      <ConfirmSaveDialog
+        open={openConfirmDialog}
+        onConfirm={handleSaveEdit}
+        text="Are you sure you want to save the changes?"
+        primaryBtnText="Save"
+        secondaryBtnText="Cancel"
+        onClose={() => setOpenConfirmDialog(false)}
+      />
     </Box>
   );
 }

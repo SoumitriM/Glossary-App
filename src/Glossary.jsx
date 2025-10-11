@@ -1,91 +1,185 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   Box,
   Button,
   TextField,
   MenuItem,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle,
   Select,
-  InputLabel,
   FormControl,
-  Typography,
+
 } from "@mui/material";
-import { FileDown, Pencil, Trash2 } from "lucide-react";
-import { Save, Add } from "@mui/icons-material";
-import initialData from "./assets/glossary_bilingual.json";
-import GlossaryTable from "./GlossTable";
-import AddDialog from "./AddDialog";
+import { FileDown } from "lucide-react";
+import { Add } from "@mui/icons-material";
+import GlossaryTable from "./Table";
+import EditDialog from "./EditDialog";
 
 export default function Glossary() {
   const [columnOrder, setColumnOrder] = useState("de-en");
   const [dialogOpen, setDialogOpen] = useState(false);
-  const [editIndex, setEditIndex] = useState(null);
-  const [form, setForm] = useState({ en: "", de: "" });
   const [data, setData] = useState([]);
-  const [fromLang, setFromLang] = useState("en");
-  const [toLang, setToLang] = useState("de");
   const [search, setSearch] = useState("");
-  const [searchLang, setSearchLang] = useState("en");
+  const [searchLang, setSearchLang] = useState("all");
+
+  const fetchData = () => {
+    if (search !== "") {
+      fetch("http://localhost:3001/api/glossary/search?q=" + search + "&lang=" + searchLang)
+        .then((res) => res.json())
+        .then((json) => {
+          setData(json);
+        })
+    } else fetch("http://localhost:3001/api/glossary")
+      .then((res) => res.json())
+      .then((json) => {
+        setData(json);
+      })
+      .catch((err) => {
+        console.error("Failed to fetch glossary:", err);
+      });
+  };
 
   useEffect(() => {
-    setData([...initialData]);
+    fetchData();
   }, []);
 
-  const handleAdd = () => {
-    if (form.en && form.de) {
-      const newEntry = {
-        en: [{ word: form.en, comment: null }],
-        de: [{ word: form.de, comment: null }],
-      };
-      if (editIndex !== null) {
-        const updated = [...data];
-        updated[editIndex] = newEntry;
-        setData(updated);
-      } else {
-        setData([...data, newEntry]);
-        console.log("Added new entry:", newEntry);
+  useEffect(() => {
+    const fetchFilteredData = async () => {
+      const response = await fetch(`http://localhost:3001/api/glossary/search?q=${search}&lang=${searchLang}`);
+      const result = await response.json();
+      setData(result);
+    };
+    fetchFilteredData();
+  }, [search, searchLang]);
+
+  const handleDeleteRow = async (id) => {
+    try {
+      const response = await fetch(`http://localhost:3001/api/glossary/${id}`, {
+        method: "DELETE",
+      });
+      if (!response.ok) throw new Error("Failed to delete item");
+      fetchData();
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleDeleteSelected = async (ids) => {
+    if (!ids || ids.length === 0) return;
+
+    try {
+      const response = await fetch("http://localhost:3001/api/glossary/delete-multiple", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ids }), // sending { ids: ["id1","id2",...] }
+      });
+
+      if (!response.ok) {
+        throw new Error(`Server error: ${response.status}`);
       }
-      setForm({ en: "", de: "" });
-      setDialogOpen(false);
-      setEditIndex(null);
+
+      const result = await response.json();
+      console.log(result.message);
+
+      fetchData();
+
+    } catch (error) {
+      console.error("Failed to delete rows:", error);
     }
   };
 
-  const handleDelete = (index) => {
-    if (confirm("Are you sure you want to delete this entry?")) {
-      setData(data.filter((_, i) => i !== index));
+
+  const handleFinalEdit = async (updatedItem, id) => {
+    console.log("Updating item with ID:", id, "to", updatedItem);
+    try {
+      const response = await fetch(`http://localhost:3001/api/glossary/${id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(updatedItem),
+      });
+      if (!response.ok) throw new Error("Failed to update item");
+      const data = await response.json();
+      console.log("Updated item:", data.item);
+      fetchData(); // Refresh data after update
+      return data.item;
+    } catch (error) {
+      console.error(error);
     }
   };
 
-  const handleEdit = (index) => {
-    const entry = data[index];
-    setForm({
-      en: entry.en[0].word,
-      de: entry.de[0].word,
-    });
-    setEditIndex(index);
-    setDialogOpen(true);
-  };
 
-  const exportData = () => {
-    const blob = new Blob([JSON.stringify(data, null, 2)], {
-      type: "application/json",
+  const handleAdd = async (updatedItem) => {
+  console.log("Adding new item:", updatedItem);
+  try {
+    const response = await fetch(`http://localhost:3001/api/glossary`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updatedItem),
     });
-    const link = document.createElement("a");
-    link.href = URL.createObjectURL(blob);
-    link.download = "glossary.json";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+
+    const data = await response.json(); // Parse response no matter what
+
+    if (!response.ok) {
+      // Instead of throwing, return the server error so the dialog can display it
+      console.warn("Server returned error:", data);
+      return data; // <- IMPORTANT: return error object to EditDialog
+    }
+
+    console.log("Added item:", data.item);
+    // setForm({ en: "", de: "" });
+    fetchData(); // refresh list
+    setDialogOpen(false);
+    return null; // success → no error
+  } catch (error) {
+    console.error("Network or unexpected error:", error);
+    // Return a consistent error object so the dialog can show it too
+    return { message: error.message || "Unexpected error occurred" };
+  }
+};
+
+
+
+  const exportData = async () => {
+    try {
+      const response = await fetch("http://localhost:3001/api/glossary/export");
+      if (!response.ok) throw new Error("Failed to export data");
+
+      // Convert response to blob for download
+      const blob = await response.blob();
+
+      // Create download link
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "glossary_bilingual.json";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+
+      console.log("Export successful");
+    } catch (error) {
+      console.error("Error exporting data:", error);
+    }
   };
 
   return (
     <Box maxWidth="xl" mx="auto">
-      <Box display="flex" flexDirection={{ xs: "column", sm: "row" }} alignItems={{ sm: "center" }} justifyContent="space-between" gap={4} mb={6}>
+      <Box display="flex" flexDirection={{ xs: "column", sm: "row" }} alignItems={{ sm: "center" }} justifyContent="space-between" gap={4}>
         <Box display="flex" flexDirection={{ xs: "column", sm: "row" }} gap={2}>
+          <FormControl>
+            <Select
+              value={columnOrder}
+              onChange={(e) => setColumnOrder(e.target.value)}
+              sx={{ width: 220 }}
+            >
+              <MenuItem value="en-de">English → German</MenuItem>
+              <MenuItem value="de-en">German → English</MenuItem>
+            </Select>
+          </FormControl>
+        </Box>
+
+        <Box display="flex" gap={2} height="56px">
           <TextField
             label="Search"
             variant="outlined"
@@ -94,22 +188,6 @@ export default function Glossary() {
             sx={{ minWidth: 400 }}
             onChange={(e) => setSearch(e.target.value)}
           />
-
-          <FormControl sx={{ minWidth: 120 }}>
-            <InputLabel>Lang</InputLabel>
-            <Select
-              label="Lang"
-              value={searchLang}
-              onChange={(e) => setSearchLang(e.target.value)}
-            >
-              <MenuItem value="en">English</MenuItem>
-              <MenuItem value="de">German</MenuItem>
-              <MenuItem value="all">All</MenuItem>
-            </Select>
-          </FormControl>
-        </Box>
-
-        <Box display="flex" gap={2} height="56px">
           <Button
             variant="contained"
             startIcon={<Add />}
@@ -147,22 +225,6 @@ export default function Glossary() {
         </Box>
       </Box>
 
-      <Box mb={4} display="flex" alignItems="flex-start" gap={2}>
-        {/* <Typography variant="body1" fontWeight={500} mt={2}>
-          Glossary Direction:
-        </Typography> */}
-        <FormControl>
-          <Select
-            value={columnOrder}
-            onChange={(e) => setColumnOrder(e.target.value)}
-            sx={{ width: 220 }}
-          >
-            <MenuItem value="en-de">English → German</MenuItem>
-            <MenuItem value="de-en">German → English</MenuItem>
-          </Select>
-        </FormControl>
-      </Box>
-
       <Box overflow="auto">
         <GlossaryTable
           data={data}
@@ -170,10 +232,13 @@ export default function Glossary() {
           searchLang={searchLang}
           search={search}
           columnOrder={columnOrder}
+          handleDeleteRow={handleDeleteRow}
+          handleDeleteSelected={handleDeleteSelected}
+          handleFinalEdit={handleFinalEdit}
         />
       </Box>
 
-      <AddDialog
+      {/* <AddDialog
         dialogOpen={dialogOpen}
         setDialogOpen={setDialogOpen}
         form={form}
@@ -184,6 +249,11 @@ export default function Glossary() {
         toLang={toLang}
         setToLang={setToLang}
         editIndex={editIndex}
+      /> */}
+      <EditDialog
+        open={dialogOpen}
+        onClose={() => setDialogOpen(false)}
+        onSave={handleAdd}
       />
     </Box>
   );

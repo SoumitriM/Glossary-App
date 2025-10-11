@@ -10,9 +10,9 @@ export default function Navbar() {
   return (
     <div className="navbar fixed top-0 w-full bg-white text-white shadow-lg z-50 p-0 text-base">
       {/* Left: Logos */}
-      <div className="flex flex-row  flex-nowrap items-center space-x-4 p-4">
+      <div className="flex flex-row  flex-nowrap items-center space-x-4 px-4 py-2">
         
-        <img src={uniLogo} alt="University Logo" width={150} height={80} />
+        <img src={uniLogo} alt="University Logo" width={150} height={50} />
 
       </div>
       <div className="flex-1 justify-center text-center">

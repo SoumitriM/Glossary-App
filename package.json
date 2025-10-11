@@ -24,6 +24,7 @@
     "react-dom": "^19.1.0",
     "react-infinite-scroll-component": "^6.1.0",
     "react-router-dom": "^7.7.1",
+    "react-window": "^1.8.11",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
