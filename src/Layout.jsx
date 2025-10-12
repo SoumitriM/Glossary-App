@@ -1,7 +1,4 @@
-// import "react-toastify/dist/ReactToastify.css";
-// import Navbar from "./Navbar"; 
 import Navbar from "./Navbar";
-// import CustomToastContainer from "./CustomToastContainer";
 export default function Layout({ children }) {
   return (
 
@@ -9,14 +6,32 @@ export default function Layout({ children }) {
       <Navbar />
       <main className="flex-grow pt-[6rem] pb-[12px] overflow-auto" >
           {children}
-        {/* <CustomToastContainer position="top-center" /> */}
       </main>
-
-      {/* Fixed Footer */}
       <footer className="bottom-0 w-full text-center p-4 bg-gray-800 shadow-inner z-50 h-[50px]">
-        <p className="text-sm text-gray-200">
-          University of Paderborn | Warburger Straße 100, Paderborn, DE | https://www.uni-paderborn.de/
-        </p>
+       <p className="text-sm text-gray-200">
+  University of Paderborn 
+  <span className="mx-2">|</span> 
+  Warburger Straße 100, Paderborn, DE 
+  <span className="mx-2">|</span> 
+  <a
+    href="https://www.uni-paderborn.de"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:underline"
+  >
+    Website
+  </a>
+  <span className="mx-2">|</span>
+  <a
+    href="https://www.uni-paderborn.de/kontakt"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:underline"
+  >
+    Contact
+  </a>
+</p>
+
       </footer>
     </div>
   );

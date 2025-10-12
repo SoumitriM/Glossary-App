@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import { useState, useMemo } from "react";
 import {
   Box,
   Paper,
@@ -22,19 +22,19 @@ import EditIcon from "@mui/icons-material/Edit";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import { visuallyHidden } from "@mui/utils";
 import { alpha } from "@mui/material/styles";
-import ConfirmSaveDialog from "./ConfirmDialog";
 import EditDialog from "./EditDialog";
+import ConfirmDialog from "./ConfirmDialog";
 
 const getHeadCells = (columnOrder) =>
   columnOrder === "en-de"
     ? [
       { id: "enWords", label: "English" },
-      { id: "deWords", label: "German" },
+      { id: "deWords", label: "Deutsch" },
       { id: "edit", label: "Edit" },
       { id: "delete", label: "Delete" },
     ]
     : [
-      { id: "deWords", label: "German" },
+      { id: "deWords", label: "Deutsch" },
       { id: "enWords", label: "English" },
       { id: "edit", label: "Edit" },
       { id: "delete", label: "Delete" },
@@ -125,39 +125,23 @@ function EnhancedTableToolbar({ numSelected, onDeleteSelected }) {
 }
 
 // Main component
-export default function GlossaryTable({ data, setData, search, searchLang, columnOrder, handleDeleteRow, handleDeleteSelected, handleFinalEdit }) {
+export default function GlossaryTable({ data, columnOrder, handleDeleteRow, handleDeleteSelected, handleFinalEdit }) {
   const [selectedRows, setSelectedRows] = useState([]);
-  const [order, setOrder] = useState("asc");
-  const [orderBy, setOrderBy] = useState("enWords");
+  const [order, setOrder] = useState(null);
+  const [orderBy, setOrderBy] = useState(null);
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
-  const [dense, setDense] = useState(true);
 
   const [editIndex, setEditIndex] = useState(null);
   const [editForm, setEditForm] = useState({});
-  const [filteredData, setFilteredData] = useState(data);
 
   const [openConfirmDialog, setOpenConfirmDialog] = useState(false);
   const [openEditDialog, setOpenEditDialog] = useState(false);
   const [rowToDelete, setRowToDelete] = useState(null);
   const [openDeleteDialog, setOpenDeleteDialog] = useState(false);
-  const [deleteMode, setDeleteMode] = useState(null); // "single" or "bulk"
+  const [deleteMode, setDeleteMode] = useState(null);
 
-  // Filter data based on search
-  // useEffect(() => {
-  //   const lowered = search.toLowerCase();
-  //   const filtered = data.filter((entry) => {
-  //     if (!search) return true;
-  //     if (searchLang === "all") {
-  //       return ["en", "de"].some((lang) =>
-  //         entry[lang]?.some(({ word }) => word.toLowerCase().includes(lowered))
-  //       );
-  //     }
-  //     return entry[searchLang]?.some(({ word }) => word.toLowerCase().includes(lowered));
-  //   });
-  //   setFilteredData(filtered);
-  // }, [data, search, searchLang]);
-
+  {/* variable to display words in comma separated format */ }
   const dataRows = useMemo(
     () =>
       data.map((entry) => ({
@@ -165,17 +149,20 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
         enWords: entry.en.map((e) => e.word).join(", "),
         deWords: entry.de.map((d) => d.word).join(", "),
         en: entry.en,
-        de: entry.de, 
+        de: entry.de,
       })),
     [data]
   );
 
+  {/* function to sort columns */ }
   const handleRequestSort = (_, property) => {
     const isAsc = orderBy === property && order === "asc";
     setOrder(isAsc ? "desc" : "asc");
     setOrderBy(property);
   };
-  const handleClick = (id) => {
+
+  {/* function to append selected row IDs */ }
+  const handleRowSelection = (id) => {
     setSelectedRows((prevSelected) =>
       prevSelected.includes(id)
         ? prevSelected.filter((selId) => selId !== id)
@@ -183,39 +170,10 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
     );
   };
 
+  {/* function to check if a row is selected */ }
   const isSelected = (id) => selectedRows.includes(id);
 
-  // DELETE single row by ID
-  // const handleDeleteRow = async (id) => {
-  //   try {
-  //     const response = await fetch(`http://localhost:3001/api/glossary/${id}`, {
-  //       method: "DELETE",
-  //     });
-  //     if (!response.ok) throw new Error("Failed to delete item");
-
-  //     setData((prev) => prev.filter((item) => item.id !== id));
-  //     setSelectedRows((prev) => prev.filter((selId) => selId !== id));
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
-
-  // DELETE selectedRows rows by ID
-  // const handleDeleteSelected = async () => {
-  //   try {
-  //     await Promise.all(
-  //       selectedRows.map((id) =>
-  //         fetch(`http://localhost:3001/api/glossary/${id}`, { method: "DELETE" })
-  //       )
-  //     );
-  //     setData((prev) => prev.filter((item) => !selectedRows.includes(item.id)));
-  //     setSelectedRows([]);
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
-
-  // Edit row
+  {/* select the row data and open the dialog */ }
   const handleEditRow = (row) => {
     setEditIndex(row.id);
     setEditForm({
@@ -224,16 +182,7 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
     setOpenEditDialog(true);
   };
 
-
-  function toWordArray(input) {
-    if (!input) return []; // handle null/undefined
-    return input
-      .split(",")              // split by comma
-      .map(word => word.trim()) // trim whitespace
-      .filter(word => word.length > 0) // remove empty strings
-      .map(word => ({ word, comment: null })); // wrap in object
-  }
-  // Save edited row
+  {/* function to save edited row */ }
   const handleSaveEdit = async () => {
 
     const updatedItem = {
@@ -245,13 +194,17 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
     setOpenConfirmDialog(false);
   };
 
-  const visibleRows = useMemo(
-    () =>
-      [...dataRows]
-        .sort(getComparator(order, orderBy))
-        .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage),
-    [dataRows, order, orderBy, page, rowsPerPage]
-  );
+  {/* function to show specific number of rows per page */ }
+  const visibleRows = useMemo(() => {
+    let rows = [...dataRows];
+
+    // only sort after user clicks a column
+    if (orderBy && order) {
+      rows = rows.sort(getComparator(order, orderBy));
+    }
+
+    return rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
+  }, [dataRows, order, orderBy, page, rowsPerPage]);
 
   return (
     <Box sx={{ width: "100%" }}>
@@ -264,7 +217,7 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
           }}
         />
         <TableContainer>
-          <Table size={dense ? "small" : "medium"}>
+          <Table size="small">
             <EnhancedTableHead
               order={order}
               orderBy={orderBy}
@@ -279,7 +232,7 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
                     <TableCell padding="checkbox">
                       <Checkbox
                         checked={isItemSelected}
-                        onChange={() => handleClick(row.id)}
+                        onChange={() => handleRowSelection(row.id)}
                       />
                     </TableCell>
 
@@ -310,7 +263,6 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
                           </TableCell>
                         );
                       }
-
                       // render enWords or deWords dynamically
                       return <TableCell key={headCell.id}>{row[headCell.id]}</TableCell>;
                     })}
@@ -320,7 +272,6 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
             </TableBody>
           </Table>
         </TableContainer>
-
         <TablePagination
           rowsPerPageOptions={[5, 10, 25]}
           component="div"
@@ -335,38 +286,7 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
         />
       </Paper>
 
-      {/* Edit Dialog */}
-      {/* <Dialog open={openEditDialog} onClose={() => setOpenEditDialog(false)}>
-        <DialogTitle>Edit Row</DialogTitle>
-        <DialogContent>
-          <TextField
-            margin="dense"
-            label="English"
-            fullWidth
-            value={editForm.en}
-            onChange={(e) => setEditForm((prev) => ({ ...prev, en: e.target.value }))}
-          />
-          <TextField
-            margin="dense"
-            label="German"
-            fullWidth
-            value={editForm.de}
-            onChange={(e) => setEditForm((prev) => ({ ...prev, de: e.target.value }))}
-          />
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={() => setOpenEditDialog(false)}>Cancel</Button>
-          <Button
-            onClick={() => {
-              setOpenEditDialog(false);
-              setOpenConfirmDialog(true);
-            }}
-          >
-            Save
-          </Button>
-        </DialogActions>
-      </Dialog> */}
-
+      {/* Dialog to add a new entry in the glossary */}
       <EditDialog
         open={openEditDialog}
         onClose={() => setOpenEditDialog(false)}
@@ -377,15 +297,15 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
         editForm={editForm}
         setEditForm={setEditForm}
       />
-      {/* Confirm Save Dialog */}
-      <ConfirmSaveDialog
+      {/* Confirm  Dialog  to save changes*/}
+      <ConfirmDialog
         open={openConfirmDialog}
         onClose={() => setOpenConfirmDialog(false)}
         onConfirm={handleSaveEdit}
       />
 
-      {/* Confirm Delete Dialog */}
-      <ConfirmSaveDialog
+      {/* Confirm  Dialog to  delete rows */}
+      <ConfirmDialog
         open={openDeleteDialog}
         primaryBtnText="Delete"
         onClose={() => setOpenDeleteDialog(false)}
@@ -396,7 +316,7 @@ export default function GlossaryTable({ data, setData, search, searchLang, colum
           setOpenDeleteDialog(false);
         }}
         title="Confirm Delete"
-        message={`Are you sure you want to delete ${deleteMode === "single" ? "this row" : `${selectedRows.length} rows`
+        message={`Are you sure you want to delete ${deleteMode === "single" ? "this entry" : `${selectedRows.length} entries`
           }?`}
       />
     </Box>

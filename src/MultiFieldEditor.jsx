@@ -222,7 +222,7 @@ const MultiFieldEditor = ({
         maxWidth="sm"
       >
         <DialogTitle>
-          Add/Update comment for the word "
+          Edit comment for the word "
           {commentDialog.idx !== null ? wordEntries[commentDialog.idx].word : ""}"
         </DialogTitle>
 
@@ -244,7 +244,7 @@ const MultiFieldEditor = ({
           />
         </DialogContent>
 
-        <DialogActions>
+        <DialogActions sx={{px: 3, pb: 3}}>
           <Button onClick={handleCloseComment}>Cancel</Button>
           <Button variant="contained" onClick={handleSaveComment}>
             Save

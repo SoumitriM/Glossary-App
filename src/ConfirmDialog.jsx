@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Dialog,
   DialogTitle,
@@ -8,7 +7,7 @@ import {
   Button,
 } from "@mui/material";
 
-export default function ConfirmSaveDialog({
+export default function ConfirmDialog({
   open,
   onConfirm,
   onClose,
@@ -39,7 +38,7 @@ export default function ConfirmSaveDialog({
         <DialogContentText>{message}</DialogContentText>
       </DialogContent>
 
-      <DialogActions>
+      <DialogActions sx={{px: 3, pb: 3}}>
         <Button onClick={onClose} color="inherit">
           {secondaryBtnText}
         </Button>

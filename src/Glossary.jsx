@@ -12,6 +12,8 @@ import { FileDown } from "lucide-react";
 import { Add } from "@mui/icons-material";
 import GlossaryTable from "./Table";
 import EditDialog from "./EditDialog";
+import { BASE_URLS } from "./config";
+import Loader from "./Loader";
 
 export default function Glossary() {
   const [columnOrder, setColumnOrder] = useState("de-en");
@@ -19,15 +21,17 @@ export default function Glossary() {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
   const [searchLang, setSearchLang] = useState("all");
+  const [isLoading, setIsLoading] = useState(false);
 
   const fetchData = () => {
+    // setIsLoading(false);
     if (search !== "") {
-      fetch("http://localhost:3001/api/glossary/search?q=" + search + "&lang=" + searchLang)
+      fetch(`${BASE_URLS.SEARCH}?q=${search}&lang=${searchLang}`)
         .then((res) => res.json())
         .then((json) => {
           setData(json);
         })
-    } else fetch("http://localhost:3001/api/glossary")
+    } else fetch(`${BASE_URLS.GET_ALL}`)
       .then((res) => res.json())
       .then((json) => {
         setData(json);
@@ -35,6 +39,7 @@ export default function Glossary() {
       .catch((err) => {
         console.error("Failed to fetch glossary:", err);
       });
+    // setIsLoading(false);
   };
 
   useEffect(() => {
@@ -43,16 +48,19 @@ export default function Glossary() {
 
   useEffect(() => {
     const fetchFilteredData = async () => {
-      const response = await fetch(`http://localhost:3001/api/glossary/search?q=${search}&lang=${searchLang}`);
+      setIsLoading(false);
+      const response = await fetch(`${BASE_URLS.SEARCH}?q=${search}&lang=${searchLang}`);
       const result = await response.json();
       setData(result);
+      setIsLoading(false);
     };
     fetchFilteredData();
   }, [search, searchLang]);
 
   const handleDeleteRow = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3001/api/glossary/${id}`, {
+      setIsLoading(false);
+      const response = await fetch(`${BASE_URLS.DELETE_ENTRY}/${id}`, {
         method: "DELETE",
       });
       if (!response.ok) throw new Error("Failed to delete item");
@@ -60,13 +68,15 @@ export default function Glossary() {
     } catch (error) {
       console.error(error);
     }
+    setIsLoading(false);
   };
 
   const handleDeleteSelected = async (ids) => {
     if (!ids || ids.length === 0) return;
 
     try {
-      const response = await fetch("http://localhost:3001/api/glossary/delete-multiple", {
+      setIsLoading(false);
+      const response = await fetch(`${BASE_URLS.DELETE_MULTIPLE}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -86,13 +96,14 @@ export default function Glossary() {
     } catch (error) {
       console.error("Failed to delete rows:", error);
     }
+    setIsLoading(false);
   };
 
 
   const handleFinalEdit = async (updatedItem, id) => {
-    console.log("Updating item with ID:", id, "to", updatedItem);
     try {
-      const response = await fetch(`http://localhost:3001/api/glossary/${id}`, {
+      setIsLoading(false);
+      const response = await fetch(`${BASE_URLS.UPDATE_ENTRY}/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedItem),
@@ -105,49 +116,45 @@ export default function Glossary() {
     } catch (error) {
       console.error(error);
     }
+    setIsLoading(false);
   };
 
 
   const handleAdd = async (updatedItem) => {
-  console.log("Adding new item:", updatedItem);
-  try {
-    const response = await fetch(`http://localhost:3001/api/glossary`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(updatedItem),
-    });
+    console.log("Adding new item:", updatedItem);
+    try {
+      setIsLoading(true);
+      const response = await fetch(`${BASE_URLS.ADD_ENTRY}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(updatedItem),
+      });
 
-    const data = await response.json(); // Parse response no matter what
+      const data = await response.json();
+      setIsLoading(false);
+      if (!response.ok) {
+        console.warn("Server returned error:", data);
+        return data;
+      }
 
-    if (!response.ok) {
-      // Instead of throwing, return the server error so the dialog can display it
-      console.warn("Server returned error:", data);
-      return data; // <- IMPORTANT: return error object to EditDialog
+      console.log("Added item:", data.item);
+      fetchData(); // refresh list
+      setDialogOpen(false);
+      return null; // success → no error
+    } catch (error) {
+      console.error("Network or unexpected error:", error);
+      return { message: error.message || "Unexpected error occurred" };
     }
-
-    console.log("Added item:", data.item);
-    // setForm({ en: "", de: "" });
-    fetchData(); // refresh list
-    setDialogOpen(false);
-    return null; // success → no error
-  } catch (error) {
-    console.error("Network or unexpected error:", error);
-    // Return a consistent error object so the dialog can show it too
-    return { message: error.message || "Unexpected error occurred" };
-  }
-};
+  };
 
 
 
   const exportData = async () => {
     try {
-      const response = await fetch("http://localhost:3001/api/glossary/export");
+      setIsLoading(false);
+      const response = await fetch(BASE_URLS.EXPORT_JSON);
       if (!response.ok) throw new Error("Failed to export data");
-
-      // Convert response to blob for download
       const blob = await response.blob();
-
-      // Create download link
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = url;
@@ -161,100 +168,90 @@ export default function Glossary() {
     } catch (error) {
       console.error("Error exporting data:", error);
     }
+    setIsLoading(false);
   };
 
   return (
-    <Box maxWidth="xl" mx="auto">
-      <Box display="flex" flexDirection={{ xs: "column", sm: "row" }} alignItems={{ sm: "center" }} justifyContent="space-between" gap={4}>
-        <Box display="flex" flexDirection={{ xs: "column", sm: "row" }} gap={2}>
-          <FormControl>
-            <Select
-              value={columnOrder}
-              onChange={(e) => setColumnOrder(e.target.value)}
-              sx={{ width: 220 }}
+    <>{isLoading ? <Loader /> :
+      <Box maxWidth="xl" mx="auto">
+        <Box display="flex" flexDirection={{ xs: "column", sm: "row" }} alignItems={{ sm: "center" }} justifyContent="space-between" gap={4}>
+          <Box display="flex" flexDirection={{ xs: "column", sm: "row" }} gap={2}>
+            <FormControl>
+              <Select
+                value={columnOrder}
+                onChange={(e) => setColumnOrder(e.target.value)}
+                sx={{ width: 220 }}
+              >
+                <MenuItem value="en-de">English → Deutsch</MenuItem>
+                <MenuItem value="de-en">Deutsch → English</MenuItem>
+              </Select>
+            </FormControl>
+          </Box>
+
+          <Box display="flex" gap={2} height="56px">
+            <TextField
+              label="Search"
+              variant="outlined"
+              fullWidth
+              value={search}
+              sx={{ minWidth: 400 }}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+            <Button
+              variant="contained"
+              startIcon={<Add />}
+              onClick={() => setDialogOpen(true)}
+              sx={{
+                height: '100%',
+                minWidth: 160,
+                backgroundColor: '#1976d2',
+                '&:hover': {
+                  backgroundColor: '#1565c0',
+                },
+              }}
             >
-              <MenuItem value="en-de">English → German</MenuItem>
-              <MenuItem value="de-en">German → English</MenuItem>
-            </Select>
-          </FormControl>
+              Add Word
+            </Button>
+
+            <Button
+              variant="outlined"
+              startIcon={<FileDown />}
+              onClick={exportData}
+              sx={{
+                height: '100%',
+                minWidth: 160,
+                borderColor: '#1976d2',
+                color: '#1976d2',
+                '&:hover': {
+                  backgroundColor: '#e3f2fd',
+                  borderColor: '#1565c0',
+                  color: '#1565c0',
+                },
+              }}
+            >
+              Export
+            </Button>
+          </Box>
         </Box>
 
-        <Box display="flex" gap={2} height="56px">
-          <TextField
-            label="Search"
-            variant="outlined"
-            fullWidth
-            value={search}
-            sx={{ minWidth: 400 }}
-            onChange={(e) => setSearch(e.target.value)}
+        <Box overflow="auto">
+          <GlossaryTable
+            data={data}
+            setData={setData}
+            searchLang={searchLang}
+            search={search}
+            columnOrder={columnOrder}
+            handleDeleteRow={handleDeleteRow}
+            handleDeleteSelected={handleDeleteSelected}
+            handleFinalEdit={handleFinalEdit}
           />
-          <Button
-            variant="contained"
-            startIcon={<Add />}
-            onClick={() => setDialogOpen(true)}
-            sx={{
-              height: '100%',
-              minWidth: 160,
-              backgroundColor: '#1976d2',
-              '&:hover': {
-                backgroundColor: '#1565c0',
-              },
-            }}
-          >
-            Add Word
-          </Button>
-
-          <Button
-            variant="outlined"
-            startIcon={<FileDown />}
-            onClick={exportData}
-            sx={{
-              height: '100%',
-              minWidth: 160,
-              borderColor: '#1976d2',
-              color: '#1976d2',
-              '&:hover': {
-                backgroundColor: '#e3f2fd',
-                borderColor: '#1565c0',
-                color: '#1565c0',
-              },
-            }}
-          >
-            Export
-          </Button>
         </Box>
-      </Box>
-
-      <Box overflow="auto">
-        <GlossaryTable
-          data={data}
-          setData={setData}
-          searchLang={searchLang}
-          search={search}
-          columnOrder={columnOrder}
-          handleDeleteRow={handleDeleteRow}
-          handleDeleteSelected={handleDeleteSelected}
-          handleFinalEdit={handleFinalEdit}
+        <EditDialog
+          open={dialogOpen}
+          formType="Add"
+          onClose={() => setDialogOpen(false)}
+          onSave={handleAdd}
         />
-      </Box>
-
-      {/* <AddDialog
-        dialogOpen={dialogOpen}
-        setDialogOpen={setDialogOpen}
-        form={form}
-        setForm={setForm}
-        handleAdd={handleAdd}
-        fromLang={fromLang}
-        setFromLang={setFromLang}
-        toLang={toLang}
-        setToLang={setToLang}
-        editIndex={editIndex}
-      /> */}
-      <EditDialog
-        open={dialogOpen}
-        onClose={() => setDialogOpen(false)}
-        onSave={handleAdd}
-      />
-    </Box>
+      </Box>}</>
   );
 }
