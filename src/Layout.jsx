@@ -7,7 +7,7 @@ export default function Layout({ children }) {
       <main className="flex-grow pt-[6rem] pb-[12px] overflow-auto" >
           {children}
       </main>
-      <footer className="bottom-0 w-full text-center p-4 bg-gray-800 shadow-inner z-50 h-[50px]">
+      <footer className="bottom-0 w-full text-center p-4 bg-blue-950 shadow-inner z-50 h-[50px]">
        <p className="text-sm text-gray-200">
   University of Paderborn 
   <span className="mx-2">|</span> 

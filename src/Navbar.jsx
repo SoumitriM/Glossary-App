@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 import uniLogo from "./assets/images/upb_logo.jpg";
+import glossaryLogo from "./assets/images/glossary_logo.png";
 
 export default function Navbar() {
   const navLinkClass = ({ isActive }) =>
@@ -19,12 +20,14 @@ export default function Navbar() {
         </a>
       </div>
       <div
-        className="flex-1 justify-center text-center cursor-pointer"
+        className="flex-1 flex justify-center cursor-pointer"
         onClick={() => window.location.reload()}
       >
-        <span className="text-sm sm:text-base md:text-md text-black lg:text-xl font-semibold tracking-wide">
-          📘 EN ⇄ DE Glossary
-        </span>
+        <img
+          src={glossaryLogo}
+          alt="Glossary Logo"
+          className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity duration-200"
+        />
       </div>
       <div className="ml-auto flex items-center">
         <div className="hidden lg:flex space-x-1">

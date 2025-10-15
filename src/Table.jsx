@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 import {
   Box,
   Paper,
@@ -153,6 +153,11 @@ export default function GlossaryTable({ data, columnOrder, handleDeleteRow, hand
       })),
     [data]
   );
+
+  useEffect(() => {
+  // Whenever the data changes (like after filtering), reset to first page
+  setPage(0);
+}, [data]);
 
   {/* function to sort columns */ }
   const handleRequestSort = (_, property) => {
